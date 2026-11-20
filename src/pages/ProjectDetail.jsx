@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import { Arrow, TextLink } from '../components/Button'
 import Placeholder from '../components/Placeholder'
+import ReelEmbed from '../components/ReelEmbed'
 import { ProjectCover } from '../components/ProjectCard'
 import Reveal from '../components/Reveal'
 import Tag from '../components/Tag'
@@ -78,7 +79,14 @@ export default function ProjectDetail() {
                   ))}
                 </ul>
               )}
-              {s.placeholder && <Placeholder>{s.placeholder}</Placeholder>}
+              {s.videos && (
+                <div className="grid grid-cols-3 gap-3 sm:gap-6">
+                  {s.videos.map((v, k) => (
+                    <ReelEmbed key={v.cover ?? k} reel={v} aspect="aspect-[3/4]" compact />
+                  ))}
+                </div>
+              )}
+              {s.placeholder && <Placeholder className={s.videos ? 'mt-6' : ''}>{s.placeholder}</Placeholder>}
             </div>
           </Reveal>
         ))}

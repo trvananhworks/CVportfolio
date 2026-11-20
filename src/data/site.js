@@ -198,26 +198,51 @@ export const projects = [
     category: 'Social Media & Content Strategy',
     title: 'Building a TikTok audience of 5,000+ followers',
     summary:
-      'A self-built TikTok channel, alongside social media management for a school basketball team and AIESEC in Vietnam.',
-    year: '2022 – 2024',
-    role: 'Creator · PR & Communication Manager · Social Media Ambassador',
-    tags: ['TikTok', 'Content planning', 'CapCut', 'Community'],
+      'A passion project from my high school years in Hanoi: a TikTok channel of school-life vlogs and atmospheric city moments, grown to more than 5,000 followers.',
+    year: '2021 – 2024',
+    role: 'Creator — passion project',
+    tags: ['TikTok', 'Short-form video', 'Visual storytelling', 'CapCut'],
     cover: 'accent',
+    image: '/images/tiktok-cover.jpg',
+    imageAlt: 'Grid of nine videos from Van Anh’s TikTok channel, with view counts',
     sections: [
       {
         heading: 'Overview',
-        body: 'Content creation has been a constant thread: building my own TikTok channel to 5,000+ followers, and running social media for organisations I was part of.',
+        body: 'What started as a creative outlet while I was a student at Chu Van An National High School for the Gifted became a channel with more than 5,000 followers. I created the content myself and learned first-hand what makes people stop scrolling.',
       },
       {
-        heading: 'Across three channels',
+        heading: 'Content pillars',
         list: [
-          'TikTok — built and managed a channel with 5,000+ followers, creating content to grow audience interaction and visibility.',
-          'Chu Van An Basketball Team — managed social platforms, content planning and audience engagement; coordinated with media partners to promote campaigns and events.',
-          'AIESEC in Vietnam for Youth — developed campaign-aligned content and promoted key initiatives through a consistent online presence.',
+          'School life — vlogs from Chu Van An, like a career orientation day and early breaks with friends.',
+          'Hanoi moods — short, atmospheric clips of the city: after the rain, quiet corners, still water.',
+          'Everyday lifestyle — small moments such as a visit to the MUJI store.',
         ],
       },
-      { heading: 'Content approach', placeholder: 'Describe the content pillars, formats or tone you used on TikTok and why.' },
-      { heading: 'Selected work', placeholder: 'Add screenshots or links to 3–4 posts you are proud of.' },
+      {
+        heading: 'Style',
+        body: 'A consistent, calm look: soft natural light, cinematic framing and elegant title overlays that mix a serif with handwritten script. Every video was recognisably part of the same channel.',
+      },
+      {
+        heading: 'Reach',
+        list: [
+          'More than 5,000 followers.',
+          'Most-viewed video: 508.4K views.',
+          'Two more videos above 80K views: 163.5K and 83.3K.',
+        ],
+      },
+      {
+        heading: 'Selected videos',
+        // Paste each TikTok link into `url` to make the card clickable.
+        videos: [
+          { platform: 'TikTok', url: null, cover: '/images/tiktok-campus.jpg', views: '508.4K', caption: 'Chu Van An school campus' },
+          { platform: 'TikTok', url: null, cover: '/images/tiktok-vlog1.jpg', views: '163.5K', caption: 'Vlog #1' },
+          { platform: 'TikTok', url: null, cover: '/images/tiktok-hanoi.jpg', views: '83.3K', caption: 'Somewhere in Hanoi' },
+        ],
+      },
+      {
+        heading: 'What it taught me',
+        body: 'Running my own channel taught me the basics I now use professionally: a clear visual identity builds recognition, the first seconds decide whether people keep watching, and consistency matters more than any single viral post.',
+      },
     ],
   },
   {
