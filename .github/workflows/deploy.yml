@@ -27,7 +27,8 @@ jobs:
       - name: Build
         run: |
           REPO="${{ github.event.repository.name }}"
-          if [[ "$REPO" == *.github.io ]]; then export BASE_PATH="/"; else export BASE_PATH="/$REPO/"; fi
+          # Root path for <user>.github.io repos or a custom domain (public/CNAME); otherwise /<repo>/
+          if [[ "$REPO" == *.github.io || -f public/CNAME ]]; then export BASE_PATH="/"; else export BASE_PATH="/$REPO/"; fi
           npm run build
           # Single-page app: serve index.html for deep links like /projects/...
           cp dist/index.html dist/404.html

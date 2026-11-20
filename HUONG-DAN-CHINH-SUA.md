@@ -90,7 +90,49 @@ Upload file PDF mới vào thư mục `public/` với **đúng tên** `VanAnhTra
   Bấm vào lần chạy lỗi để xem dòng báo lỗi (thường do thiếu dấu nháy hoặc dấu phẩy).
 - Quay lại bản trước: mở file → **History** → chọn bản cũ → copy nội dung → dán lại.
 
-## 5. Chạy trên máy tính (tuỳ chọn)
+## 5. Đổi tên website
+
+"Tên website" có 2 nghĩa — chọn cái bạn cần:
+
+### A. Đổi địa chỉ (link) website
+
+Hiện tại: `https://chatgptlamtran-ctrl.github.io/my-portfolio/`
+
+**Cách 1 — Đổi phần cuối link (miễn phí)**
+1. Vào repository → **Settings** (bánh răng) → mục **General**
+2. Ô **Repository name**: đổi `my-portfolio` thành tên mới, vd. `vananhtran`
+3. Bấm **Rename**
+4. Vào tab **Actions** → **Deploy to GitHub Pages** → **Run workflow** để build lại
+5. Link mới: `https://chatgptlamtran-ctrl.github.io/vananhtran/`
+
+**Cách 2 — Link ngắn nhất (miễn phí)**
+Đổi tên repository thành đúng `chatgptlamtran-ctrl.github.io` (làm như Cách 1)
+→ link thành `https://chatgptlamtran-ctrl.github.io/`
+
+**Cách 3 — Tên miền riêng, vd. `vananhtran.com` (khoảng 10–15 €/năm)**
+1. Mua tên miền ở Namecheap, Cloudflare, Porkbun…
+2. Repository → **Settings** → **Pages** → **Custom domain**: nhập `vananhtran.com` → **Save**
+3. Tạo file `public/CNAME` (Add file → Create new file) chỉ chứa một dòng: `vananhtran.com`
+4. Ở trang quản lý tên miền, thêm bản ghi DNS theo hướng dẫn GitHub:
+   https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
+5. Đợi vài phút đến vài giờ, rồi tích **Enforce HTTPS** trong Settings → Pages
+
+> Phần cuối link (`chatgptlamtran-ctrl`) là tên tài khoản GitHub. Muốn đổi phần này:
+> github.com → ảnh đại diện → **Settings** → **Account** → **Change username**.
+> Lưu ý: link cũ sẽ ngừng hoạt động.
+
+### B. Đổi tên hiển thị trên website
+
+| Muốn đổi | File | Tìm dòng |
+|---|---|---|
+| Tên trên tab trình duyệt / Google | `index.html` | `<title>…</title>` và các dòng `content="…"` |
+| Phần đuôi tiêu đề mỗi trang | `src/components/useSeo.js` | `const SUFFIX = 'Van Anh Tran'` |
+| Tên ở góc trái menu | `src/components/Header.jsx` | `Van Anh Tran</span>` |
+| Tên ở chân trang & trang About | `src/data/site.js` | `fullName`, `name` |
+
+---
+
+## 6. Chạy trên máy tính (tuỳ chọn)
 
 Cần cài [Node.js](https://nodejs.org) (bản 22). Sau đó:
 
