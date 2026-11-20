@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #141b34;
+  --color-navy: #1f2a4d;
+  --color-slate: #565d74;
+  --color-mist: #e3e4e9;
+  --color-fog: #ecedf0;
+  --color-paper: #f4f4f1;
+  --color-lavender: #cfc8e8;
+  --color-lavender-soft: #e7e3f3;
+  --color-iris: #62589a;
+
+  --font-serif: "Fraunces", "Georgia", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection {
+    @apply bg-lavender text-ink;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-iris);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    font-optical-sizing: auto;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-[1240px] px-5 sm:px-8 lg:px-12;
+  }
+  .eyebrow {
+    @apply font-sans text-[0.72rem] font-medium uppercase tracking-[0.22em] text-slate;
+  }
+  .rule {
+    @apply h-px w-full bg-ink/12;
+  }
+}
+
+/* Scroll reveal: gentle fade + rise */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 900ms var(--ease-soft), transform 900ms var(--ease-soft);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: 1ms !important;
+    animation-duration: 1ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
