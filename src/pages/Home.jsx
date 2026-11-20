@@ -106,7 +106,7 @@ export default function Home() {
             id="spotlight"
             index="02"
             eyebrow="Experience spotlight"
-            title={<>Six months shaping the <em className="font-medium text-philips">Philips</em> employer brand.</>}
+            title={<>Six months shaping the <em className="text-accent">Philips</em> employer brand.</>}
           />
           <div className="mt-16 grid gap-12 lg:grid-cols-12 lg:gap-16">
             <Reveal className="lg:col-span-5">
