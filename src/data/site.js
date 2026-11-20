@@ -241,20 +241,34 @@ export const projects = [
     ],
   },
   {
-    slug: 'brand-consumer-research',
-    category: 'Brand & Consumer Research',
-    title: 'Brand & consumer research project',
-    summary: 'Placeholder — a research project exploring a brand, audience or consumer behaviour question.',
+    slug: 'youth-ambassador',
+    category: 'Ambassadorships & NGOs',
+    title: 'Invited ambassador for youth projects and NGOs',
+    summary:
+      'Invited to represent a range of youth-led projects and NGOs, helping their causes reach young audiences.',
     year: null,
-    role: null,
-    tags: ['Consumer behaviour', 'Research'],
+    role: 'Ambassador',
+    tags: ['Advocacy', 'Community', 'Social media'],
     cover: 'outline',
-    placeholder: true,
     sections: [
-      { heading: 'Research question', placeholder: 'What did you set out to understand?' },
-      { heading: 'Method', placeholder: 'Survey, interviews, content analysis, desk research…' },
-      { heading: 'Insights', placeholder: 'Key findings — only real results.' },
-      { heading: 'Implications for the brand', placeholder: 'What would you recommend, and why?' },
+      {
+        heading: 'Overview',
+        body: 'Over the years I have been invited to act as an ambassador for several youth projects and non-profit organisations — representing their mission and helping them connect with young people.',
+      },
+      {
+        heading: 'Organisations',
+        list: ['AIESEC in Vietnam for Youth — Social Media Ambassador (Sep 2022 – Jan 2023)'],
+        placeholder: 'Add the other projects and NGOs you were invited to represent (name, role, year).',
+      },
+      {
+        heading: 'What the role involved',
+        list: [
+          'Represented the organisation on social media to strengthen its brand image and engagement.',
+          'Developed creative content aligned with campaign objectives.',
+          'Promoted key initiatives and events through a consistent online presence.',
+        ],
+      },
+      { heading: 'Why it matters to me', placeholder: 'What drew you to these causes, and what did representing them teach you?' },
     ],
   },
   {
