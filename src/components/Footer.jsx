@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="md:col-span-8">
             <p className="eyebrow text-paper/55">Open to internships & graduate roles</p>
             <h2 className="mt-6 text-4xl leading-[1.05] font-light sm:text-6xl">
-              Let’s build brands people <em className="text-accent-light">believe</em> in.
+              Let’s build brands people <em className="text-accent-bright">believe</em> in.
             </h2>
           </div>
           <div className="flex flex-col items-start gap-6 md:col-span-4 md:items-end md:justify-end">

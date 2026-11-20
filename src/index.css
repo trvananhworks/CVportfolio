@@ -17,6 +17,8 @@
   --color-accent-deep: #721630;
   --color-accent-soft: #f4e8eb;
   --color-accent-light: #e3b1be;
+  /* Same burgundy hue, lifted so large display type stays readable on navy (3.4:1) */
+  --color-accent-bright: #c8375e;
 
   /* Philips blue — ONLY for Philips highlights (Experience + home spotlight)
      philips-light → on navy backgrounds; philips-soft → quiet hover/tint */
