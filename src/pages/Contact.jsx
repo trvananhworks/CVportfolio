@@ -18,7 +18,7 @@ export default function Contact() {
       <PageHero
         eyebrow="Contact"
         title={<>Let’s <em className="text-accent">talk.</em></>}
-        intro="I’m looking for marketing and communication internships and graduate opportunities — in branding, employer branding, digital marketing or strategic communications. I’d love to hear from you."
+        intro="Whether you have a role in mind, work in marketing or communications yourself, or simply share a love for brands and storytelling — I’d love to connect. I’m always keen to swap ideas, hear about your experience and learn from people in the field."
       />
       <section aria-label="Contact details" className="container-x pb-32">
         <div className="grid gap-12 md:grid-cols-12">
@@ -29,7 +29,7 @@ export default function Contact() {
             </div>
             <div>
               <dt className="eyebrow">Open to</dt>
-              <dd className="mt-3 font-serif text-xl">Internships &amp; graduate roles</dd>
+              <dd className="mt-3 font-serif text-xl">Internships, graduate roles &amp; coffee chats</dd>
             </div>
           </Reveal>
 
