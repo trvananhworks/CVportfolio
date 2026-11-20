@@ -185,8 +185,8 @@ export const achievements = [
     body: 'Built and managed a TikTok channel, creating content that grew audience interaction and visibility.',
   },
   {
-    figure: '12,000+',
-    label: 'N95 masks distributed',
+    figure: '412M',
+    label: 'VND raised for charity',
     body: 'Co-founded the charity project “1 Student 1 N95” and, as Communication Lead, worked with influencers and KOLs to spread its impact.',
   },
 ]
@@ -241,15 +241,17 @@ export const projects = [
     category: 'Campaign & Social Impact',
     title: '“1 Student 1 N95” — a student-led charity campaign',
     summary:
-      'Co-founder and Communication Lead of a student charity project that distributed more than 12,000 N95 masks. I worked with influencers and KOLs to spread the project’s impact.',
+      'Co-founder and Communication Lead of “1 Student 1 N95”, a student-led charity project that raised 412,589,519 VND. I worked with influencers and KOLs to spread the project’s impact.',
     year: null,
     role: 'Co-founder & Communication Lead',
     tags: ['Communication', 'Influencer & KOL outreach', 'Social impact'],
     cover: 'mist',
+    image: '/images/n95-cover.jpg',
+    imageAlt: '“1 Student 1 N95” thank-you graphic: the amount raised and the supporters, influencers and student clubs behind the project',
     sections: [
       {
         heading: 'Overview',
-        body: '“1 Student 1 N95” was a student-led charity project that distributed 12,104 N95 masks. I was one of its co-founders and served as the project’s Communication Lead.',
+        body: '“1 Student 1 N95” was a student-led charity project providing N95 masks. I was one of its co-founders and served as the project’s Communication Lead.',
       },
       {
         heading: 'My role',
@@ -262,9 +264,9 @@ export const projects = [
       {
         heading: 'Impact',
         list: [
-          '12,104 N95 masks distributed.',
           '412,589,519 VND (roughly €14,000) raised.',
           'Influencer and KOL partnerships that carried the project’s message to a much wider audience.',
+          'Backed by a large community of individual supporters, influencers and student clubs.',
         ],
       },
       {
