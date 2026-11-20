@@ -14,7 +14,7 @@ export default function Experience() {
       <PageHero
         eyebrow="Experience"
         title={<>Talent Marketing <em className="text-accent">at Philips.</em></>}
-        intro="Six months helping a global health-technology company tell its story to prospective talent — across channels, markets and stakeholders."
+        intro="Six months helping a global health-technology company tell its story to prospective talent… across channels, markets and stakeholders."
       />
 
       {/* Fact sheet */}
@@ -66,7 +66,7 @@ export default function Experience() {
         <div className="container-x py-28 sm:py-36">
           <Reveal>
             <p className="eyebrow text-paper/55"><span className="mr-3 font-serif text-base normal-case italic tracking-normal text-accent-light">02</span>How the work flowed</p>
-            <h2 id="process" className="mt-6 max-w-3xl text-3xl leading-[1.1] font-light sm:text-5xl">From hiring priorities to published stories — and back.</h2>
+            <h2 id="process" className="mt-6 max-w-3xl text-3xl leading-[1.1] font-light sm:text-5xl">From hiring priorities to published stories… and back.</h2>
           </Reveal>
           <ol className="mt-16 grid gap-px overflow-hidden rounded-sm bg-paper/10 sm:grid-cols-2 lg:grid-cols-4">
             {philips.process.map((s, i) => (

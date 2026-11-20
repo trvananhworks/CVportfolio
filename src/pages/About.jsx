@@ -29,7 +29,7 @@ export default function About() {
           </Reveal>
           <Reveal delay={120} className="space-y-6 text-lg leading-relaxed text-slate lg:col-span-6 lg:col-start-7 lg:self-center">
             <p className="font-serif text-2xl leading-snug font-light text-ink sm:text-3xl">
-              I’m {profile.fullName} — Van Anh for short.
+              I’m {profile.fullName}, Van Anh for short.
             </p>
             <p>
               I study International Communication and Media at Erasmus University Rotterdam, graduating in 2027. Before
@@ -37,7 +37,7 @@ export default function About() {
               Geography.
             </p>
             <p>
-              My work so far has centred on telling stories to the right audiences — from employer branding at Philips to
+              My work so far has centred on telling stories to the right audiences, from employer branding at Philips to
               running social media for student organisations and building my own TikTok community. I’m especially
               interested in branding, consumer behaviour, digital marketing and strategic communications.
             </p>
@@ -79,7 +79,7 @@ export default function About() {
               <Reveal as="li" key={t.role} delay={i * 80} className="grid gap-1 border-t border-ink/12 py-6 sm:grid-cols-[11rem_1fr] sm:gap-8">
                 <p className="text-sm text-slate">{t.period}</p>
                 <p className="text-lg">
-                  {t.role} <span className="text-slate">— {t.org}</span>
+                  {t.role} <span className="text-slate">· {t.org}</span>
                 </p>
               </Reveal>
             ))}
@@ -114,7 +114,7 @@ export default function About() {
             {certifications.map((c) => (
               <Reveal as="li" key={c.title} className="flex flex-wrap items-baseline justify-between gap-2 border-t border-ink/12 py-4">
                 <span>
-                  {c.title} <span className="text-slate">— {c.issuer}</span>
+                  {c.title} <span className="text-slate">· {c.issuer}</span>
                 </span>
                 <span className="text-sm text-slate">{c.year}</span>
               </Reveal>

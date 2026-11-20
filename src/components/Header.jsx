@@ -41,7 +41,7 @@ export default function Header() {
       }`}
     >
       <div className="container-x flex h-[72px] items-center justify-between">
-        <Link to="/" className="group flex items-baseline gap-2" aria-label={`${profile.name} — home`}>
+        <Link to="/" className="group flex items-baseline gap-2" aria-label={`${profile.name}, home`}>
           <span className="font-serif text-xl tracking-tight">Van Anh Tran</span>
           <span className="hidden h-1.5 w-1.5 rounded-full bg-accent-deep transition-transform duration-500 ease-soft group-hover:scale-150 sm:block" />
         </Link>

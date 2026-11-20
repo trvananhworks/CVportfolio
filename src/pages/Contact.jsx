@@ -18,7 +18,7 @@ export default function Contact() {
       <PageHero
         eyebrow="Contact"
         title={<>Let’s <em className="text-accent">talk.</em></>}
-        intro="Whether you have a role in mind, work in marketing or communications yourself, or simply share a love for brands and storytelling — I’d love to connect. I’m always keen to swap ideas, hear about your experience and learn from people in the field."
+        intro="Whether you have a role in mind, work in marketing or communications yourself, or simply share a love for brands and storytelling… I’d love to connect. I’m always keen to swap ideas, hear about your experience and learn from people in the field."
       />
       <section aria-label="Contact details" className="container-x pb-32">
         <div className="grid gap-12 md:grid-cols-12">

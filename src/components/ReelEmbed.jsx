@@ -48,7 +48,7 @@ export default function ReelEmbed({ reel, className = '', aspect = 'aspect-[3/5]
           <span className={`absolute flex items-center gap-2 font-semibold text-paper ${compact ? 'bottom-3 left-3 text-base' : 'bottom-4 left-4 text-lg'}`}>
             <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 2.5v11L13 8z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /></svg>
             {reel.views}
-            <span className="sr-only"> views{reel.url ? ` — watch on ${platform} (opens in a new tab)` : ''}</span>
+            <span className="sr-only"> views{reel.url ? `, watch on ${platform} (opens in a new tab)` : ''}</span>
           </span>
         </Card>
       ) : code ? (
@@ -73,7 +73,7 @@ export default function ReelEmbed({ reel, className = '', aspect = 'aspect-[3/5]
               <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M5 3.5v11l9-5.5z" fill="currentColor" /></svg>
             </span>
             <span className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-accent-light">Video · {platform}</span>
-            <span className="px-8 text-xs text-paper/60">Placeholder — paste the link in <code>site.js</code></span>
+            <span className="px-8 text-xs text-paper/60">Placeholder: paste the link in <code>site.js</code></span>
           </div>
         </div>
       )}

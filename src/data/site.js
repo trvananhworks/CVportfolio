@@ -42,7 +42,7 @@ export const images = {
   },
   creative: {
     src: '/images/creative.jpg',
-    alt: 'Grid of nine videos from Van Anh’s TikTok channel — vlogs and scenes around Hanoi, with view counts',
+    alt: 'Grid of nine videos from Van Anh’s TikTok channel: vlogs and scenes around Hanoi, with view counts',
     label: 'Image 4 · Creative work',
     hint: 'Vertical, 3:4',
   },
@@ -59,14 +59,14 @@ export const education = [
     school: 'Chu Van An National High School for the Gifted',
     degree: 'Specialised in Geography',
     place: 'Hanoi, Vietnam',
-    period: 'Sep 2021 – May 2024',
+    period: 'Sep 2021 to May 2024',
   },
 ]
 
 export const philips = {
   role: 'Talent Marketing Intern',
   company: 'Philips',
-  period: 'March 2026 – August 2026',
+  period: 'March to August 2026',
   pillars: [
     {
       no: '01',
@@ -99,7 +99,7 @@ export const philips = {
   learnings: [
     {
       title: 'One message rarely fits every market.',
-      body: 'Localisation is more than translation — what works in one market can miss in another.',
+      body: 'Localisation is more than translation… what works in one market can miss in another.',
     },
     {
       title: 'Ask why, not just what.',
@@ -121,7 +121,7 @@ export const philips = {
   reels: [
     {
       url: 'https://www.instagram.com/reel/DX_7rksyP4z/',
-      caption: 'Innovation Impact Week at Philips, HTC Eindhoven — Instagram Reel edited by Van Anh',
+      caption: 'Innovation Impact Week at Philips, HTC Eindhoven. Instagram Reel edited by Van Anh',
       cover: '/images/reel-philips.jpg',
       views: '10.2K', // update from Instagram now and then
     },
@@ -138,7 +138,7 @@ export const earlierExperience = [
   {
     role: 'Public Relations & Communication Manager',
     org: 'Chu Van An Basketball Team',
-    period: 'Aug 2022 – Jun 2024',
+    period: 'Aug 2022 to Jun 2024',
     points: [
       'Managed the team’s social media platforms, including content planning and audience engagement.',
       'Created and published posts to enhance brand visibility and community outreach.',
@@ -148,7 +148,7 @@ export const earlierExperience = [
   {
     role: 'Social Media Ambassador',
     org: 'AIESEC in Vietnam for Youth',
-    period: 'Sep 2022 – Jan 2023',
+    period: 'Sep 2022 to Jan 2023',
     points: [
       'Represented the organisation on social media to strengthen brand image and engagement.',
       'Developed creative content aligned with campaign objectives.',
@@ -162,7 +162,7 @@ export const certifications = [
   { issuer: 'Google', title: 'Fundamentals of Digital Marketing', year: '2025' },
   { issuer: 'Canva', title: 'Marketing with Canva', year: '2025' },
   { issuer: 'University of Pennsylvania', title: 'Improving Communication Skills', year: '2025' },
-  { issuer: 'Microsoft', title: 'Office Specialist — PowerPoint 2016, Word 2016', year: '2023' },
+  { issuer: 'Microsoft', title: 'Office Specialist: PowerPoint 2016, Word 2016', year: '2023' },
   { issuer: 'IELTS', title: 'Overall band 7.0', year: '2023' },
 ]
 
@@ -199,8 +199,8 @@ export const projects = [
     title: 'Building a TikTok audience of 5,000+ followers',
     summary:
       'A passion project from my high school years in Hanoi: a TikTok channel of school-life vlogs and atmospheric city moments, grown to more than 5,000 followers.',
-    year: '2021 – 2024',
-    role: 'Creator — passion project',
+    year: '2021 to 2024',
+    role: 'Creator, passion project',
     tags: ['TikTok', 'Short-form video', 'Visual storytelling', 'CapCut'],
     cover: 'accent',
     image: '/images/tiktok-cover.jpg',
@@ -213,9 +213,9 @@ export const projects = [
       {
         heading: 'Content pillars',
         list: [
-          'School life — vlogs from Chu Van An, like a career orientation day and early breaks with friends.',
-          'Hanoi moods — short, atmospheric clips of the city: after the rain, quiet corners, still water.',
-          'Everyday lifestyle — small moments such as a visit to the MUJI store.',
+          'School life: vlogs from Chu Van An, like a career orientation day and early breaks with friends.',
+          'Hanoi moods: short, atmospheric clips of the city: after the rain, quiet corners, still water.',
+          'Everyday lifestyle: small moments such as a visit to the MUJI store.',
         ],
       },
       {
@@ -239,7 +239,7 @@ export const projects = [
   {
     slug: '1-student-1-n95',
     category: 'Campaign & Social Impact',
-    title: '“1 Student 1 N95” — a student-led charity campaign',
+    title: '“1 Student 1 N95”: a student-led charity campaign',
     summary:
       'Co-founder and Communication Lead of “1 Student 1 N95”, a student-led charity project that raised 412,589,519 VND. I worked with influencers and KOLs to spread the project’s impact.',
     year: null,
@@ -271,7 +271,7 @@ export const projects = [
       },
       {
         heading: 'What I learned',
-        body: 'Trusted voices can take a message much further than any single account — and good partnerships start with clear, respectful communication that makes it easy for others to help.',
+        body: 'Trusted voices can take a message much further than any single account… and good partnerships start with clear, respectful communication that makes it easy for others to help.',
       },
     ],
   },
@@ -288,11 +288,11 @@ export const projects = [
     sections: [
       {
         heading: 'Overview',
-        body: 'Over the years I have been invited to act as an ambassador for several youth projects and non-profit organisations — representing their mission and helping them connect with young people.',
+        body: 'Over the years I have been invited to act as an ambassador for several youth projects and non-profit organisations, representing their mission and helping them connect with young people.',
       },
       {
         heading: 'Organisations',
-        list: ['AIESEC in Vietnam for Youth — Social Media Ambassador (Sep 2022 – Jan 2023)'],
+        list: ['AIESEC in Vietnam for Youth: Social Media Ambassador (Sep 2022 to Jan 2023)'],
         placeholder: 'Add the other projects and NGOs you were invited to represent (name, role, year).',
       },
       {
@@ -311,7 +311,7 @@ export const projects = [
     category: 'University Marketing Projects',
     title: 'Hello 24/7: pitching a new direction for an app',
     summary:
-      'Digital Content course, Erasmus University Rotterdam — our team of three used company data to propose a development direction for the Hello 24/7 app. Our pitch was one of the top two the company selected for reference.',
+      'Digital Content course, Erasmus University Rotterdam. Our team of three used company data to propose a development direction for the Hello 24/7 app. Our pitch was one of the top two the company selected for reference.',
     year: null,
     role: 'Team member & presenter (team of 3)',
     tags: ['Digital content', 'App strategy', 'Storyboarding', 'Pitching'],
@@ -330,12 +330,12 @@ export const projects = [
           'Worked from the company’s own data to shape a development direction for the app.',
           'Built a creative concept, “One Shared Peace of Mind”, with the line “One App, One Shared Peace of Mind.”',
           'Storyboarded a 40-second, 12-cut video to bring the concept to life.',
-          'Presented our final pitch — I opened the presentation and guided the first part.',
+          'Presented our final pitch: I opened the presentation and guided the first part.',
         ],
       },
       {
         heading: 'The concept',
-        body: 'The storyboard follows someone rushing out of work with the nagging feeling they have forgotten something — a child, a parent’s medication. Then a message from family arrives in Hello 24/7: don’t worry, it’s already taken care of. Shared tasks tick off one by one, and the worry turns into relief.',
+        body: 'The storyboard follows someone rushing out of work with the nagging feeling they have forgotten something… a child, a parent’s medication. Then a message from family arrives in Hello 24/7: don’t worry, it’s already taken care of. Shared tasks tick off one by one, and the worry turns into relief.',
       },
       {
         heading: 'Outcome',
@@ -347,7 +347,7 @@ export const projects = [
     slug: 'personal-creative-projects',
     category: 'Personal Creative Projects',
     title: 'Personal creative work',
-    summary: 'Placeholder — video edits, design experiments or other self-initiated work made with CapCut, Canva and more.',
+    summary: 'Placeholder: video edits, design experiments or other self-initiated work made with CapCut, Canva and more.',
     year: null,
     role: 'Creator',
     tags: ['Video', 'Design', 'Canva'],

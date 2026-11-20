@@ -7,7 +7,7 @@ import useSeo from '../components/useSeo'
 import { achievements, images, philips, profile, projects } from '../data/site'
 
 export default function Home() {
-  useSeo(null, 'Van Anh Tran — International Communication and Media student at Erasmus University Rotterdam and former Philips Talent Marketing Intern. Branding, consumer behaviour, digital marketing and strategic communications.')
+  useSeo(null, 'Van Anh Tran: International Communication and Media student at Erasmus University Rotterdam and former Philips Talent Marketing Intern. Branding, consumer behaviour, digital marketing and strategic communications.')
   const featured = projects.filter((p) => p.featured)
 
   return (
@@ -30,7 +30,7 @@ export default function Home() {
             </Reveal>
             <Reveal delay={150} className="mt-10 max-w-xl">
               <p className="text-lg leading-relaxed text-slate">
-                I’m Van Anh — an International Communication and Media student at Erasmus University Rotterdam and,
+                I’m Van Anh, an International Communication and Media student at Erasmus University Rotterdam and,
                 most recently, a Talent Marketing Intern at Philips. I work where branding, consumer behaviour and
                 strategic communications meet.
               </p>
@@ -53,8 +53,8 @@ export default function Home() {
 
         <Reveal delay={300} as="dl" className="mt-20 grid gap-8 border-t border-cocoa/15 pt-8 sm:grid-cols-3">
           {[
-            ['Studying', 'BSc International Communication & Media, Erasmus University Rotterdam — exp. 2027'],
-            ['Recently', 'Talent Marketing Intern, Philips — Mar to Aug 2026'],
+            ['Studying', 'BSc International Communication & Media, Erasmus University Rotterdam (expected 2027)'],
+            ['Recently', 'Talent Marketing Intern at Philips, Mar to Aug 2026'],
             ['Based in', profile.location],
           ].map(([k, v]) => (
             <div key={k}>

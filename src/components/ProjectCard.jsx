@@ -32,7 +32,7 @@ export function ProjectCover({ project, index, large = false, wide = false }) {
       aria-hidden="true"
     >
       <span className="absolute top-5 left-5 text-[0.68rem] font-medium uppercase tracking-[0.2em] opacity-70">
-        {String(index + 1).padStart(2, '0')} — {project.category}
+        {String(index + 1).padStart(2, '0')} · {project.category}
       </span>
       <span className={`m-auto px-8 text-center font-serif font-light italic leading-none opacity-90 ${large ? 'text-7xl sm:text-9xl' : 'text-6xl sm:text-7xl'}`}>
         {project.category.split(/[\s&]+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join('')}
