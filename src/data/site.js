@@ -97,19 +97,19 @@ export const philips = {
   learnings: [
     {
       title: 'One message rarely fits every market.',
-      body: 'Aligning the Benefits sections of Philips’ career pages for the UK, Israel, the CEE region and the Netherlands showed me that localisation is more than translation. Wording that lands in one market can miss in another, so I flagged phrasing that might not travel and suggested alternatives.',
+      body: 'Localisation is more than translation — what works in one market can miss in another.',
     },
     {
       title: 'Ask why, not just what.',
-      body: 'Each month I compared post performance using data from Sprout, Advocacy and LinkedIn. Spotting which posts did better was the easy part; the value was in working out why — format, posting time, audience targeting and message — and turning that into takeaways for future content. Making every newsletter link trackable taught me to plan measurement before publishing.',
+      body: 'Performance data only becomes useful once you understand what is behind the numbers.',
     },
     {
       title: 'Authentic beats overly polished.',
-      body: 'In the brainstorm for Philips’ Innovation Day Reels in Eindhoven, I suggested making the content feel real rather than overly produced, based on how short-form video tends to perform on Instagram. It confirmed that I do my best work where creativity meets strategy.',
+      body: 'Real, human content often connects better than heavily produced content.',
     },
     {
-      title: 'The org chart shows where people sit — not how work gets done.',
-      body: 'In a global team supporting every part of Philips, priorities are negotiated across regions and time zones with HR, Internal Communications and recruitment. I learned to share context early, take initiative on my own tasks, and that asking questions is a strength, not a weakness.',
+      title: 'Context matters as much as content.',
+      body: 'In a global team, sharing context early and asking questions keeps work moving.',
     },
   ],
   // Instagram Reels edited for Philips. Paste the public link into `url`,
@@ -233,7 +233,7 @@ export const projects = [
           'One message rarely fits every market — localisation is more than translation.',
           'Ask why, not just what — performance data is only useful once you understand the reasons behind it.',
           'Authentic beats overly polished in short-form video.',
-          'The org chart shows where people sit, not how work gets done — share context early and ask questions.',
+          'Context matters as much as content — share it early and ask questions.',
         ],
       },
     ],

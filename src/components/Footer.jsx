@@ -15,7 +15,7 @@ export default function Footer() {
             </h2>
           </div>
           <div className="flex flex-col items-start gap-6 md:col-span-4 md:items-end md:justify-end">
-            <Button href={`mailto:${profile.email}`} variant="light">Get in touch</Button>
+            <Button to="/contact" variant="light">Get in touch</Button>
           </div>
         </Reveal>
 
