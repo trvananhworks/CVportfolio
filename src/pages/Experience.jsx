@@ -33,22 +33,32 @@ export default function Experience() {
             </div>
           ))}
         </Reveal>
-        <Reveal className="mt-16">
-          <ImageSlot image={images.philips} aspect="aspect-[16/10] sm:aspect-[21/9]" className="rounded-sm" />
-        </Reveal>
       </section>
 
       {/* Pillars */}
       <section aria-labelledby="contributions" className="container-x py-28 sm:py-36">
         <SectionHeading id="contributions" index="01" eyebrow="Contributions" title="Three threads that ran through the work." />
-        <div className="mt-16 grid gap-10 md:grid-cols-3">
-          {philips.pillars.map((p, i) => (
-            <Reveal key={p.no} delay={i * 120} className="group border-t border-ink pt-8">
-              <p className="font-serif text-6xl font-light text-accent transition-colors duration-700 ease-soft group-hover:text-accent-deep">{p.no}</p>
-              <h3 className="mt-6 text-2xl font-light">{p.title}</h3>
-              <p className="mt-4 leading-relaxed text-slate">{p.body}</p>
-            </Reveal>
-          ))}
+        <div className="mt-16 grid gap-12 lg:grid-cols-12 lg:gap-16">
+          <Reveal className="lg:col-span-5">
+            <figure className="lg:sticky lg:top-28">
+              <ImageSlot image={images.philips} aspect="aspect-[3/4]" className="rounded-sm" />
+              <figcaption className="mt-4 flex justify-between text-xs tracking-[0.18em] text-slate uppercase">
+                <span>Philips</span>
+                <span className="font-serif text-sm normal-case italic tracking-normal">Talent Marketing, 2026</span>
+              </figcaption>
+            </figure>
+          </Reveal>
+          <div className="space-y-14 lg:col-span-7">
+            {philips.pillars.map((p, i) => (
+              <Reveal key={p.no} delay={i * 120} className="group grid gap-4 border-t border-ink pt-8 sm:grid-cols-[6rem_1fr]">
+                <p className="font-serif text-5xl font-light text-accent transition-colors duration-700 ease-soft group-hover:text-accent-deep sm:text-6xl">{p.no}</p>
+                <div>
+                  <h3 className="text-2xl font-light sm:text-3xl">{p.title}</h3>
+                  <p className="mt-4 text-lg leading-relaxed text-slate">{p.body}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 

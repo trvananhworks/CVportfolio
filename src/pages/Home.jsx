@@ -113,10 +113,10 @@ export default function Home() {
             title={<>Six months shaping the <em>Philips</em> employer brand.</>}
           />
           <div className="mt-16 grid gap-12 lg:grid-cols-12 lg:gap-16">
-            <Reveal className="lg:col-span-6">
-              <ImageSlot image={images.philips} aspect="aspect-[16/11]" className="rounded-sm" />
+            <Reveal className="lg:col-span-5">
+              <ImageSlot image={images.philips} aspect="aspect-[3/4]" className="rounded-sm" />
             </Reveal>
-            <div className="lg:col-span-6">
+            <div className="lg:col-span-7 lg:self-center">
               <ol className="divide-y divide-ink/12 border-y border-ink/12">
                 {philips.pillars.map((p, i) => (
                   <Reveal as="li" key={p.no} delay={i * 100} className="grid grid-cols-[3rem_1fr] gap-4 py-7">

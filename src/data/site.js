@@ -33,10 +33,10 @@ export const images = {
     hint: 'Landscape or square, approx. 4:3',
   },
   philips: {
-    src: null,
-    alt: 'Van Anh Tran during the Philips Talent Marketing internship',
+    src: '/images/philips.jpg',
+    alt: 'Colleagues gathered on the steps of a multi-storey Philips office atrium, watching a presentation on screen',
     label: 'Image 3 · Philips internship',
-    hint: 'Landscape, approx. 16:10',
+    hint: 'Vertical, approx. 3:4',
   },
   creative: {
     src: null,
