@@ -1,12 +1,13 @@
 import Reveal from './Reveal'
 
 /** Numbered editorial section heading. */
-export default function SectionHeading({ index, eyebrow, title, intro, id, className = '' }) {
+export default function SectionHeading({ index, eyebrow, title, intro, id, className = '', tone = 'accent' }) {
+  const indexColor = tone === 'philips' ? 'text-philips' : 'text-accent-deep'
   return (
     <Reveal className={`grid gap-6 md:grid-cols-12 ${className}`}>
       <div className="md:col-span-3">
         <p className="eyebrow flex items-center gap-3">
-          {index && <span className="font-serif text-base normal-case italic tracking-normal text-accent-deep">{index}</span>}
+          {index && <span className={`font-serif text-base normal-case italic tracking-normal ${indexColor}`}>{index}</span>}
           {eyebrow}
         </p>
       </div>

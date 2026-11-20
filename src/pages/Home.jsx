@@ -104,13 +104,14 @@ export default function Home() {
       </section>
 
       {/* ── Philips spotlight ──────────────────────── */}
-      <section aria-labelledby="spotlight" className="bg-accent-soft/60 py-28 sm:py-36">
+      <section aria-labelledby="spotlight" className="border-y border-ink/8 bg-fog/70 py-28 sm:py-36">
         <div className="container-x">
           <SectionHeading
             id="spotlight"
             index="02"
             eyebrow="Experience spotlight"
-            title={<>Six months shaping the <em>Philips</em> employer brand.</>}
+            tone="philips"
+            title={<>Six months shaping the <em className="font-medium text-philips">Philips</em> employer brand.</>}
           />
           <div className="mt-16 grid gap-12 lg:grid-cols-12 lg:gap-16">
             <Reveal className="lg:col-span-5">
@@ -120,7 +121,7 @@ export default function Home() {
               <ol className="divide-y divide-ink/12 border-y border-ink/12">
                 {philips.pillars.map((p, i) => (
                   <Reveal as="li" key={p.no} delay={i * 100} className="grid grid-cols-[3rem_1fr] gap-4 py-7">
-                    <span className="font-serif text-lg italic text-accent-deep">{p.no}</span>
+                    <span className="font-serif text-lg italic text-philips">{p.no}</span>
                     <div>
                       <h3 className="text-xl font-normal">{p.title}</h3>
                       <p className="mt-2 text-sm leading-relaxed text-slate">{p.body}</p>

@@ -4,9 +4,10 @@
   --color-ink: #141b34;
   --color-navy: #1f2a4d;
   --color-slate: #565d74;
-  --color-mist: #e3e4e9;
-  --color-fog: #ecedf0;
-  --color-paper: #f4f4f1;
+  /* Warm neutrals — sit comfortably with the warm portrait, navy and burgundy */
+  --color-mist: #e2dfd9;
+  --color-fog: #edeae5;
+  --color-paper: #f5f3ef;
   /* Burgundy: confident signal colour, grounded by navy.
      accent       → fills, display accents, text on light backgrounds
      accent-deep  → small text / hover states (stronger contrast)
@@ -16,6 +17,13 @@
   --color-accent-deep: #721630;
   --color-accent-soft: #f4e8eb;
   --color-accent-light: #e3b1be;
+
+  /* Philips blue — ONLY for Philips highlights (Experience + home spotlight)
+     philips-light → on navy backgrounds; philips-soft → quiet hover/tint */
+  --color-philips: #0b5ed7;
+  --color-philips-deep: #0a4baa;
+  --color-philips-soft: #e7effa;
+  --color-philips-light: #8fb6f0;
 
   /* Warm browns sampled from the portrait — used around the hero photo */
   --color-cocoa: #4f3824;

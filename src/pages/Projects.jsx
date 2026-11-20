@@ -16,7 +16,7 @@ export default function Projects() {
       <PageHero
         eyebrow="Projects"
         title={<>Selected <em className="text-accent">work.</em></>}
-        intro="Employer branding, social content, research and campaigns. Projects marked “Placeholder” are frames for work still to be added."
+        intro="Social content, campaigns, community work and coursework. Projects marked “Placeholder” are frames for work still to be added."
       />
       <section aria-label="Project list" className="container-x pb-32">
         <Reveal>

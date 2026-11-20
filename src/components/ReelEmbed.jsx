@@ -18,7 +18,8 @@ function shortcode(url) {
  * - Instagram url only → Instagram's own embed.
  * - nothing        → clearly labelled placeholder.
  */
-export default function ReelEmbed({ reel, className = '', aspect = 'aspect-[3/5]', compact = false }) {
+export default function ReelEmbed({ reel, className = '', aspect = 'aspect-[3/5]', compact = false, tone = 'accent' }) {
+  const hoverFill = tone === 'philips' ? 'group-hover:border-philips group-hover:bg-philips' : 'group-hover:border-accent group-hover:bg-accent'
   const platform = reel.platform ?? 'Instagram'
   const code = platform === 'Instagram' ? shortcode(reel.url) : null
   const hasCard = reel.cover && reel.views
@@ -40,7 +41,7 @@ export default function ReelEmbed({ reel, className = '', aspect = 'aspect-[3/5]
           />
           <span aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
           {reel.url && (
-            <span aria-hidden="true" className={`absolute inset-0 m-auto grid place-items-center rounded-full border border-paper/50 bg-ink/20 text-paper backdrop-blur-sm transition-all duration-500 ease-soft group-hover:scale-105 group-hover:border-accent group-hover:bg-accent ${compact ? 'h-12 w-12' : 'h-16 w-16'}`}>
+            <span aria-hidden="true" className={`absolute inset-0 m-auto grid place-items-center rounded-full border border-paper/50 bg-ink/20 text-paper backdrop-blur-sm transition-all duration-500 ease-soft group-hover:scale-105 ${hoverFill} ${compact ? 'h-12 w-12' : 'h-16 w-16'}`}>
               <svg width="18" height="18" viewBox="0 0 18 18"><path d="M5 3.5v11l9-5.5z" fill="currentColor" /></svg>
             </span>
           )}

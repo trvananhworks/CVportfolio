@@ -284,7 +284,7 @@ export const projects = [
     year: null,
     role: 'Ambassador',
     tags: ['Advocacy', 'Community', 'Social media'],
-    cover: 'outline',
+    cover: 'accent-outline',
     sections: [
       {
         heading: 'Overview',
