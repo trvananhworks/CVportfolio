@@ -185,8 +185,8 @@ export const achievements = [
     body: 'Built and managed a TikTok channel, creating content that grew audience interaction and visibility.',
   },
   {
-    figure: '1,200+',
-    label: 'Protective masks distributed',
+    figure: '12,000+',
+    label: 'N95 masks distributed',
     body: 'Co-founded the charity project “1 Student 1 N95” and, as Communication Lead, worked with influencers and KOLs to spread its impact.',
   },
 ]
@@ -231,17 +231,8 @@ export const projects = [
         ],
       },
       {
-        heading: 'Selected videos',
-        // Paste each TikTok link into `url` to make the card clickable.
-        videos: [
-          { platform: 'TikTok', url: null, cover: '/images/tiktok-campus.jpg', views: '508.4K', caption: 'Chu Van An school campus' },
-          { platform: 'TikTok', url: null, cover: '/images/tiktok-vlog1.jpg', views: '163.5K', caption: 'Vlog #1' },
-          { platform: 'TikTok', url: null, cover: '/images/tiktok-hanoi.jpg', views: '83.3K', caption: 'Somewhere in Hanoi' },
-        ],
-      },
-      {
         heading: 'What it taught me',
-        body: 'Running my own channel taught me the basics I now use professionally: a clear visual identity builds recognition, the first seconds decide whether people keep watching, and consistency matters more than any single viral post.',
+        body: 'Running my own channel taught me the basics I now use professionally: a clear visual identity builds recognition, the first seconds decide whether people keep watching, and consistency matters more than any single viral post. It also sparked something lasting: I genuinely enjoy editing video and experimenting with different platforms to see what works where.',
       },
     ],
   },
@@ -250,7 +241,7 @@ export const projects = [
     category: 'Campaign & Social Impact',
     title: '“1 Student 1 N95” — a student-led charity campaign',
     summary:
-      'Co-founder and Communication Lead of a student charity project that distributed 1,200+ protective masks. I worked with influencers and KOLs to spread the project’s impact.',
+      'Co-founder and Communication Lead of a student charity project that distributed more than 12,000 N95 masks. I worked with influencers and KOLs to spread the project’s impact.',
     year: null,
     role: 'Co-founder & Communication Lead',
     tags: ['Communication', 'Influencer & KOL outreach', 'Social impact'],
@@ -258,7 +249,7 @@ export const projects = [
     sections: [
       {
         heading: 'Overview',
-        body: '“1 Student 1 N95” was a student-led charity project that distributed more than 1,200 protective masks. I was one of its co-founders and served as the project’s Communication Lead.',
+        body: '“1 Student 1 N95” was a student-led charity project that distributed 12,104 N95 masks. I was one of its co-founders and served as the project’s Communication Lead.',
       },
       {
         heading: 'My role',
@@ -271,7 +262,8 @@ export const projects = [
       {
         heading: 'Impact',
         list: [
-          'More than 1,200 protective masks distributed.',
+          '12,104 N95 masks distributed.',
+          '412,589,519 VND (roughly €14,000) raised.',
           'Influencer and KOL partnerships that carried the project’s message to a much wider audience.',
         ],
       },
