@@ -117,7 +117,7 @@ Hiện tại: `https://chatgptlamtran-ctrl.github.io/my-portfolio/`
    https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
 5. Đợi vài phút đến vài giờ, rồi tích **Enforce HTTPS** trong Settings → Pages
 
-> Phần cuối link (`chatgptlamtran-ctrl`) là tên tài khoản GitHub. Muốn đổi phần này:
+> Phần đầu link (`chatgptlamtran-ctrl`) là tên tài khoản GitHub. Muốn đổi phần này:
 > github.com → ảnh đại diện → **Settings** → **Account** → **Change username**.
 > Lưu ý: link cũ sẽ ngừng hoạt động.
 
