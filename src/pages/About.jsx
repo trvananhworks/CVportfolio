@@ -73,7 +73,7 @@ export default function About() {
       {/* Experience overview */}
       <section aria-labelledby="experience-overview" className="bg-fog/70">
         <div className="container-x py-24 sm:py-32">
-          <SectionHeading id="experience-overview" index="02" eyebrow="Experience" title="Professional & voluntary experience." />
+          <SectionHeading id="experience-overview" index="02" eyebrow="Experience" title="Professional experience." />
           <ul className="mt-14 md:ml-[25%]">
             {timeline.map((t, i) => (
               <Reveal as="li" key={t.role} delay={i * 80} className="grid gap-1 border-t border-ink/12 py-6 sm:grid-cols-[11rem_1fr] sm:gap-8">
