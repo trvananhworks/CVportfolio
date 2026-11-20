@@ -19,10 +19,14 @@ export default function Footer() {
           </div>
         </Reveal>
 
-        <div className="mt-24 grid gap-10 border-t border-paper/12 pt-10 text-sm sm:grid-cols-3">
+        <div className="mt-24 grid gap-10 border-t border-paper/12 pt-10 text-sm sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="eyebrow text-paper/45">Email</p>
             <a href={`mailto:${profile.email}`} className="mt-3 block text-paper/85 transition-colors hover:text-accent-light">{profile.email}</a>
+          </div>
+          <div>
+            <p className="eyebrow text-paper/45">Phone</p>
+            <a href={`tel:${profile.phone}`} className="mt-3 block text-paper/85 transition-colors hover:text-accent-light">{profile.phoneLabel}</a>
           </div>
           <div>
             <p className="eyebrow text-paper/45">Elsewhere</p>

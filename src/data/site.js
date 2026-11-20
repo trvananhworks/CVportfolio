@@ -12,6 +12,8 @@ export const profile = {
   name: 'Van Anh Tran',
   location: 'Rotterdam, the Netherlands',
   email: 'annietr.works@gmail.com',
+  phone: '+31624370103',
+  phoneLabel: '+31 6 24 37 01 03',
   linkedin: 'https://www.linkedin.com/in/vananhtrng',
   linkedinLabel: 'linkedin.com/in/vananhtrng',
   cv: asset('/VanAnhTran_CV_2026.pdf'),
