@@ -27,10 +27,10 @@ export const images = {
     hint: 'Vertical portrait, approx. 4:5',
   },
   about: {
-    src: null,
-    alt: 'Van Anh Tran at Erasmus University Rotterdam',
+    src: '/images/about.jpg',
+    alt: 'Van Anh Tran in a graduation gown, holding a bouquet of white daisies on a stone bridge',
     label: 'Image 2 · Campus / lifestyle',
-    hint: 'Landscape or square, approx. 4:3',
+    hint: 'Vertical, approx. 4:5',
   },
   philips: {
     src: '/images/philips.jpg',
