@@ -47,10 +47,6 @@ export default function Home() {
                 <div aria-hidden="true" className="absolute inset-0 translate-x-3 translate-y-3 rounded-sm border border-cocoa/35 sm:translate-x-5 sm:translate-y-5" />
                 <ImageSlot image={images.portrait} priority className="relative rounded-sm shadow-[0_30px_60px_-30px_rgba(79,56,36,0.45)]" />
               </div>
-              <figcaption className="mt-8 flex items-center justify-between text-xs tracking-[0.18em] text-mocha uppercase sm:mt-10">
-                <span>Van Anh Tran</span>
-                <span className="font-serif text-sm normal-case italic tracking-normal">Rotterdam, 2026</span>
-              </figcaption>
             </figure>
           </Reveal>
         </div>
