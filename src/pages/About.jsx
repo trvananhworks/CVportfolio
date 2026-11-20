@@ -29,7 +29,7 @@ export default function About() {
           </Reveal>
           <Reveal delay={120} className="space-y-6 text-lg leading-relaxed text-slate lg:col-span-6 lg:col-start-7 lg:self-center">
             <p className="font-serif text-2xl leading-snug font-light text-ink sm:text-3xl">
-              I’m {profile.fullName}, Van Anh for short.
+              I’m {profile.fullName}… Van Anh for short, or simply {profile.nickname}.
             </p>
             <p>
               I study International Communication and Media at Erasmus University Rotterdam, graduating in 2027. Before

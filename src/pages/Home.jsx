@@ -30,7 +30,7 @@ export default function Home() {
             </Reveal>
             <Reveal delay={150} className="mt-10 max-w-xl">
               <p className="text-lg leading-relaxed text-slate">
-                I’m Van Anh, an International Communication and Media student at Erasmus University Rotterdam and,
+                I’m Van Anh (or {profile.nickname}), an International Communication and Media student at Erasmus University Rotterdam and,
                 most recently, a Talent Marketing Intern at Philips. I work where branding, consumer behaviour and
                 strategic communications meet.
               </p>

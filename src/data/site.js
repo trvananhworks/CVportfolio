@@ -10,6 +10,7 @@ export const asset = (path) => (path?.startsWith('/') ? import.meta.env.BASE_URL
 export const profile = {
   fullName: 'Nguyen Van Anh Tran',
   name: 'Van Anh Tran',
+  nickname: 'Annie',
   location: 'Rotterdam, the Netherlands',
   email: 'annietr.works@gmail.com',
   phone: '+31624370103',
