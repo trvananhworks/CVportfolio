@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -16,6 +16,8 @@ export default function App() {
         <Route path="about" element={<About />} />
         <Route path="experience" element={<Experience />} />
         <Route path="projects" element={<Projects />} />
+        {/* Philips project now lives on the Experience page */}
+        <Route path="projects/employer-branding-philips" element={<Navigate to="/experience" replace />} />
         <Route path="projects/:slug" element={<ProjectDetail />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />

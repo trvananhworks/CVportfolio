@@ -1,4 +1,3 @@
-import { TextLink } from '../components/Button'
 import ImageSlot from '../components/ImageSlot'
 import PageHero from '../components/PageHero'
 import ReelEmbed from '../components/ReelEmbed'
@@ -128,9 +127,6 @@ export default function Experience() {
                 </Reveal>
               ))}
             </ol>
-            <Reveal className="mt-12">
-              <TextLink to="/projects/employer-branding-philips">View the employer branding project</TextLink>
-            </Reveal>
           </div>
         </div>
       </section>

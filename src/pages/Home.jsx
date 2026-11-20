@@ -88,13 +88,13 @@ export default function Home() {
           id="featured"
           index="01"
           eyebrow="Selected work"
-          title="Employer branding, content and campaigns."
+          title="Content, campaigns and communities."
           intro="A few projects that show how I think about audiences, channels and the stories in between."
         />
         <div className="mt-20 grid gap-x-10 gap-y-20 md:grid-cols-2">
           {featured.map((p, i) => (
-            <Reveal key={p.slug} delay={i * 100} className={i === 0 ? 'md:col-span-2' : ''}>
-              <ProjectCard project={p} index={projects.indexOf(p)} wide={i === 0} />
+            <Reveal key={p.slug} delay={i * 100} className={i === 0 && featured.length % 2 ? 'md:col-span-2' : ''}>
+              <ProjectCard project={p} index={projects.indexOf(p)} wide={i === 0 && featured.length % 2 === 1} />
             </Reveal>
           ))}
         </div>

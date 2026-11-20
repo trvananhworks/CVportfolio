@@ -194,53 +194,6 @@ export const achievements = [
 // ── Projects. `cover` picks a typographic placeholder style until real imagery exists.
 export const projects = [
   {
-    slug: 'employer-branding-philips',
-    category: 'Talent Marketing & Employer Branding',
-    title: 'Telling the Philips employer story to a global talent pool',
-    summary:
-      'Employer branding narratives distributed across LinkedIn, career portals and internal newsletters during my Talent Marketing internship.',
-    year: '2026',
-    role: 'Talent Marketing Intern',
-    tags: ['Employer branding', 'LinkedIn', 'Recruitment analytics'],
-    cover: 'navy',
-    featured: true,
-    sections: [
-      {
-        heading: 'Context',
-        body: 'As a Talent Marketing Intern at Philips (March – August 2026), I worked on how the company presents itself to prospective talent across multiple markets.',
-      },
-      {
-        heading: 'What I did',
-        list: [
-          'Crafted and distributed employer branding narratives across LinkedIn, career portals and internal newsletters.',
-          'Tracked performance indicators and translated recruitment analytics into actionable insights for hiring pipeline strategies.',
-          'Partnered with HR, marketing and recruitment stakeholders to align messaging with workforce planning objectives and regional hiring targets.',
-        ],
-      },
-      {
-        heading: 'Tools',
-        list: [
-          'Phenom People — designing the Philips career page and Philips newsletter.',
-          'Sprout Social — publishing LinkedIn posts and tracking performance with UTM links.',
-          'Adobe Express — editing LinkedIn images.',
-          'CapCut — editing short-form video.',
-          'Viva Engage and Advocacy — internal communication and employee advocacy.',
-        ],
-      },
-      { heading: 'A closer look', placeholder: 'Add one or two specific campaigns or stories you worked on (only what you’re allowed to share publicly).' },
-      { heading: 'Outcomes', placeholder: 'Add any results you can share — e.g. qualitative feedback or approved metrics. Leave out if confidential.' },
-      {
-        heading: 'Key learnings',
-        list: [
-          'One message rarely fits every market — localisation is more than translation.',
-          'Ask why, not just what — performance data is only useful once you understand the reasons behind it.',
-          'Authentic beats overly polished in short-form video.',
-          'Context matters as much as content — share it early and ask questions.',
-        ],
-      },
-    ],
-  },
-  {
     slug: 'social-media-content-strategy',
     category: 'Social Media & Content Strategy',
     title: 'Building a TikTok audience of 5,000+ followers',
