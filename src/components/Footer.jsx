@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="md:col-span-8">
             <p className="eyebrow text-paper/55">Open to internships & graduate roles</p>
             <h2 className="mt-6 text-4xl leading-[1.05] font-light sm:text-6xl">
-              Let’s build brands people <em className="text-accent">believe</em> in.
+              Let’s build brands people <em className="text-accent-light">believe</em> in.
             </h2>
           </div>
           <div className="flex flex-col items-start gap-6 md:col-span-4 md:items-end md:justify-end">
@@ -22,11 +22,11 @@ export default function Footer() {
         <div className="mt-24 grid gap-10 border-t border-paper/12 pt-10 text-sm sm:grid-cols-3">
           <div>
             <p className="eyebrow text-paper/45">Email</p>
-            <a href={`mailto:${profile.email}`} className="mt-3 block text-paper/85 transition-colors hover:text-accent">{profile.email}</a>
+            <a href={`mailto:${profile.email}`} className="mt-3 block text-paper/85 transition-colors hover:text-accent-light">{profile.email}</a>
           </div>
           <div>
             <p className="eyebrow text-paper/45">Elsewhere</p>
-            <TextLink href={profile.linkedin} className="mt-3 text-paper/85! hover:text-accent!">LinkedIn</TextLink>
+            <TextLink href={profile.linkedin} className="mt-3 text-paper/85! hover:text-accent-light!">LinkedIn</TextLink>
           </div>
           <div>
             <p className="eyebrow text-paper/45">Based in</p>

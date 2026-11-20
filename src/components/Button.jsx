@@ -20,15 +20,15 @@ const base =
   'group relative isolate inline-flex items-center gap-3 overflow-hidden rounded-full px-6 py-3.5 text-sm font-medium tracking-wide transition-[color,border-color,box-shadow] duration-500 ease-soft'
 
 const variants = {
-  // Navy pill; a accent layer rises softly from below on hover.
+  // Navy pill; a burgundy layer rises softly from below on hover.
   primary:
-    'bg-ink text-paper hover:text-ink before:absolute before:inset-0 before:-z-10 before:translate-y-full before:rounded-full before:bg-accent before:transition-transform before:duration-500 before:ease-soft hover:before:translate-y-0',
+    'bg-ink text-paper before:absolute before:inset-0 before:-z-10 before:translate-y-full before:rounded-full before:bg-accent before:transition-transform before:duration-500 before:ease-soft hover:before:translate-y-0',
   // Hairline outline that fills with ink.
   secondary:
     'border border-ink/25 text-ink hover:border-ink hover:text-paper before:absolute before:inset-0 before:-z-10 before:translate-y-full before:rounded-full before:bg-ink before:transition-transform before:duration-500 before:ease-soft hover:before:translate-y-0',
   // On dark backgrounds.
   light:
-    'bg-paper text-ink before:absolute before:inset-0 before:-z-10 before:translate-y-full before:rounded-full before:bg-accent before:transition-transform before:duration-500 before:ease-soft hover:before:translate-y-0',
+    'bg-paper text-ink hover:text-paper before:absolute before:inset-0 before:-z-10 before:translate-y-full before:rounded-full before:bg-accent before:transition-transform before:duration-500 before:ease-soft hover:before:translate-y-0',
 }
 
 /** Pill button. Renders an internal Link, external <a>, or download link. */

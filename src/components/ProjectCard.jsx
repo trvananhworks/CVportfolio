@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom'
 import { Arrow } from './Button'
 
 const covers = {
-  navy: 'bg-ink text-accent',
-  accent: 'bg-accent text-ink',
+  navy: 'bg-ink text-accent-light',
+  accent: 'bg-accent text-paper',
   mist: 'bg-mist text-navy',
   outline: 'bg-fog text-ink/70',
   'accent-outline': 'bg-accent-soft text-accent-deep',

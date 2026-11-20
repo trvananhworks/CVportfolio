@@ -7,15 +7,17 @@
   --color-mist: #e3e4e9;
   --color-fog: #ecedf0;
   --color-paper: #f4f4f1;
-  /* Vermilion: bold signal colour, grounded by navy.
-     accent      → fills, large display type, accents on navy
-     accent-deep → small text on light backgrounds (AA contrast)
-     accent-soft → quiet tinted surfaces */
-  --color-accent: #e8552d;
-  --color-accent-soft: #f7e8e1;
-  --color-accent-deep: #b23c1a;
+  /* Burgundy: confident signal colour, grounded by navy.
+     accent       → fills, display accents, text on light backgrounds
+     accent-deep  → small text / hover states (stronger contrast)
+     accent-soft  → quiet tinted surfaces
+     accent-light → accent text on navy backgrounds only */
+  --color-accent: #8c1c3a;
+  --color-accent-deep: #721630;
+  --color-accent-soft: #f4e8eb;
+  --color-accent-light: #e3b1be;
 
-  --font-serif: "Instrument Serif", "Didot", "Georgia", serif;
+  --font-serif: "Playfair Display", "Georgia", serif;
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
 
   --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
@@ -30,17 +32,20 @@
     @apply bg-paper text-ink font-sans antialiased;
       }
   ::selection {
-    @apply bg-accent text-ink;
+    @apply bg-accent text-paper;
   }
   :focus-visible {
     outline: 2px solid var(--color-accent-deep);
     outline-offset: 3px;
     border-radius: 2px;
   }
+  h1, h2, h3, .font-serif {
+    font-variant-numeric: lining-nums;
+  }
   h1, h2, h3 {
     font-family: var(--font-serif);
     font-weight: 400;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.01em;
   }
 }
 
