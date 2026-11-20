@@ -94,7 +94,7 @@ export const philips = {
   // Instagram Reels edited for Philips. Paste the public link into `url`,
   // e.g. 'https://www.instagram.com/reel/ABC123xyz/'. Add more objects for more reels.
   reels: [
-    { url: null, caption: 'Instagram Reel for Philips — edited by Van Anh' },
+    { url: 'https://www.instagram.com/reel/DX_7rksyP4z/', caption: 'Instagram Reel for Philips — edited by Van Anh' },
   ],
   process: [
     { step: 'Listen', body: 'Understand workforce planning objectives and regional hiring targets with stakeholders.' },
