@@ -7,12 +7,16 @@
   --color-mist: #e3e4e9;
   --color-fog: #ecedf0;
   --color-paper: #f4f4f1;
-  --color-lavender: #cfc8e8;
-  --color-lavender-soft: #e7e3f3;
-  --color-iris: #62589a;
+  /* Vermilion: bold signal colour, grounded by navy.
+     accent      → fills, large display type, accents on navy
+     accent-deep → small text on light backgrounds (AA contrast)
+     accent-soft → quiet tinted surfaces */
+  --color-accent: #e8552d;
+  --color-accent-soft: #f7e8e1;
+  --color-accent-deep: #b23c1a;
 
-  --font-serif: "Fraunces", "Georgia", serif;
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", "Didot", "Georgia", serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
 
   --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -24,20 +28,19 @@
   }
   body {
     @apply bg-paper text-ink font-sans antialiased;
-    font-feature-settings: "ss01", "cv11";
-  }
+      }
   ::selection {
-    @apply bg-lavender text-ink;
+    @apply bg-accent text-ink;
   }
   :focus-visible {
-    outline: 2px solid var(--color-iris);
+    outline: 2px solid var(--color-accent-deep);
     outline-offset: 3px;
     border-radius: 2px;
   }
   h1, h2, h3 {
     font-family: var(--font-serif);
-    font-optical-sizing: auto;
-    letter-spacing: -0.02em;
+    font-weight: 400;
+    letter-spacing: -0.015em;
   }
 }
 

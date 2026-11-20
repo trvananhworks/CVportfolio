@@ -19,7 +19,7 @@ export default function About() {
     <>
       <PageHero
         eyebrow="About"
-        title={<>Curious about why people <em className="text-iris">choose</em> the brands they do.</>}
+        title={<>Curious about why people <em className="text-accent">choose</em> the brands they do.</>}
       />
 
       <section className="container-x pb-28" aria-label="Introduction">
@@ -100,7 +100,7 @@ export default function About() {
             ['Soft skills', skills.soft],
           ].map(([title, items], i) => (
             <Reveal key={title} delay={i * 100}>
-              <h3 className="eyebrow text-iris">{title}</h3>
+              <h3 className="eyebrow text-accent-deep">{title}</h3>
               <ul className="mt-5 flex flex-wrap gap-2">
                 {items.map((s) => <li key={s}><Tag>{s}</Tag></li>)}
               </ul>
@@ -109,7 +109,7 @@ export default function About() {
         </div>
 
         <div className="mt-20 md:ml-[25%]">
-          <Reveal as="h3" className="eyebrow text-iris">Certifications</Reveal>
+          <Reveal as="h3" className="eyebrow text-accent-deep">Certifications</Reveal>
           <ul className="mt-5">
             {certifications.map((c) => (
               <Reveal as="li" key={c.title} className="flex flex-wrap items-baseline justify-between gap-2 border-t border-ink/12 py-4">
@@ -125,7 +125,7 @@ export default function About() {
 
       {/* CV */}
       <section aria-labelledby="cv" className="container-x pb-28">
-        <Reveal className="flex flex-col items-start justify-between gap-8 rounded-sm border border-ink/12 bg-lavender-soft/50 p-8 sm:flex-row sm:items-center sm:p-12">
+        <Reveal className="flex flex-col items-start justify-between gap-8 rounded-sm border border-ink/12 bg-accent-soft/50 p-8 sm:flex-row sm:items-center sm:p-12">
           <div>
             <p className="eyebrow">Curriculum vitae</p>
             <h2 id="cv" className="mt-3 text-3xl font-light sm:text-4xl">The one-page version.</h2>

@@ -17,7 +17,7 @@ export default function ImageSlot({ image, className = '', aspect = 'aspect-[4/5
   }
   return (
     <figure
-      className={`relative overflow-hidden bg-gradient-to-br from-mist via-fog to-lavender-soft ${aspect} ${className}`}
+      className={`relative overflow-hidden bg-gradient-to-br from-mist via-fog to-accent-soft ${aspect} ${className}`}
       role="img"
       aria-label={`Image placeholder: ${image.alt}`}
     >
@@ -31,7 +31,7 @@ export default function ImageSlot({ image, className = '', aspect = 'aspect-[4/5
       </svg>
       <figcaption className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5">
         <span>
-          <span className="block text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-iris">{image.label}</span>
+          <span className="block text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent-deep">{image.label}</span>
           <span className="mt-1 block text-xs text-slate">{image.hint}</span>
         </span>
         <span className="font-serif text-3xl italic text-ink/15">va</span>

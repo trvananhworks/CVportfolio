@@ -6,7 +6,7 @@ export default function PageHero({ eyebrow, title, intro, children }) {
     <header className="container-x pt-36 pb-16 sm:pt-44 sm:pb-24">
       <Reveal>
         <p className="eyebrow">{eyebrow}</p>
-        <h1 className="mt-6 max-w-5xl text-[2.6rem] leading-[1.02] font-light sm:text-6xl lg:text-[5.5rem]">{title}</h1>
+        <h1 className="mt-6 max-w-5xl text-[2.9rem] leading-[1] sm:text-7xl lg:text-[6.25rem]">{title}</h1>
       </Reveal>
       {intro && (
         <Reveal delay={120} className="mt-10 grid gap-8 md:grid-cols-12">

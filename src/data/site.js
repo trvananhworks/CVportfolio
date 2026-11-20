@@ -186,7 +186,7 @@ export const projects = [
     year: '2022 – 2024',
     role: 'Creator · PR & Communication Manager · Social Media Ambassador',
     tags: ['TikTok', 'Content planning', 'CapCut', 'Community'],
-    cover: 'lavender',
+    cover: 'accent',
     featured: true,
     sections: [
       {
@@ -251,7 +251,7 @@ export const projects = [
     year: null,
     role: null,
     tags: ['Strategy', 'Coursework'],
-    cover: 'lavender-outline',
+    cover: 'accent-outline',
     placeholder: true,
     sections: [
       { heading: 'Brief', placeholder: 'Course name and the brief you were given.' },

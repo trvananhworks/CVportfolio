@@ -26,18 +26,18 @@ export default function ProjectDetail() {
           </Link>
           <p className="eyebrow mt-12">
             {project.category}
-            {project.placeholder && <span className="ml-2 text-iris">· Placeholder project</span>}
+            {project.placeholder && <span className="ml-2 text-accent-deep">· Placeholder project</span>}
           </p>
           <h1 className="mt-6 max-w-5xl text-4xl leading-[1.04] font-light sm:text-6xl lg:text-7xl">{project.title}</h1>
         </Reveal>
         <Reveal delay={120} as="dl" className="mt-14 grid gap-8 border-t border-ink/12 pt-8 sm:grid-cols-3">
           <div>
             <dt className="eyebrow">Year</dt>
-            <dd className="mt-3">{project.year ?? <span className="text-iris">To add</span>}</dd>
+            <dd className="mt-3">{project.year ?? <span className="text-accent-deep">To add</span>}</dd>
           </div>
           <div>
             <dt className="eyebrow">Role</dt>
-            <dd className="mt-3">{project.role ?? <span className="text-iris">To add</span>}</dd>
+            <dd className="mt-3">{project.role ?? <span className="text-accent-deep">To add</span>}</dd>
           </div>
           <div>
             <dt className="eyebrow">Focus</dt>
@@ -61,7 +61,7 @@ export default function ProjectDetail() {
         {project.sections.map((s, i) => (
           <Reveal key={s.heading} as="section" className="mt-16 grid gap-6 border-t border-ink/10 pt-10 md:grid-cols-12">
             <h2 className="flex items-baseline gap-3 font-sans text-sm font-medium tracking-normal md:col-span-3">
-              <span className="font-serif italic text-iris">{String(i + 1).padStart(2, '0')}</span>
+              <span className="font-serif italic text-accent-deep">{String(i + 1).padStart(2, '0')}</span>
               {s.heading}
             </h2>
             <div className="md:col-span-8">
@@ -70,7 +70,7 @@ export default function ProjectDetail() {
                 <ul className="space-y-4">
                   {s.list.map((li) => (
                     <li key={li} className="flex gap-4 text-lg leading-relaxed text-slate">
-                      <span aria-hidden="true" className="mt-3.5 h-px w-5 shrink-0 bg-iris" />
+                      <span aria-hidden="true" className="mt-3.5 h-px w-5 shrink-0 bg-accent-deep" />
                       {li}
                     </li>
                   ))}
@@ -82,7 +82,7 @@ export default function ProjectDetail() {
         ))}
       </div>
 
-      <Link to={`/projects/${next.slug}`} className="group block border-t border-ink/10 bg-fog/60 transition-colors duration-700 ease-soft hover:bg-lavender-soft">
+      <Link to={`/projects/${next.slug}`} className="group block border-t border-ink/10 bg-fog/60 transition-colors duration-700 ease-soft hover:bg-accent-soft">
         <div className="container-x flex items-end justify-between gap-8 py-20 sm:py-28">
           <div>
             <p className="eyebrow">Next project</p>

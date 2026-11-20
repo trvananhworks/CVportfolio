@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom'
 import { Arrow } from './Button'
 
 const covers = {
-  navy: 'bg-ink text-lavender',
-  lavender: 'bg-lavender text-ink',
+  navy: 'bg-ink text-accent',
+  accent: 'bg-accent text-ink',
   mist: 'bg-mist text-navy',
   outline: 'bg-fog text-ink/70',
-  'lavender-outline': 'bg-lavender-soft text-iris',
+  'accent-outline': 'bg-accent-soft text-accent-deep',
   'ink-outline': 'bg-navy text-paper/80',
 }
 
@@ -39,9 +39,9 @@ export default function ProjectCard({ project, index, wide = false }) {
           <div>
             <p className="eyebrow">
               {project.category}
-              {project.placeholder && <span className="ml-2 text-iris">· Placeholder</span>}
+              {project.placeholder && <span className="ml-2 text-accent-deep">· Placeholder</span>}
             </p>
-            <h3 className="mt-3 text-2xl leading-snug font-light text-ink sm:text-[1.7rem]">
+            <h3 className="mt-3 text-[1.7rem] leading-tight text-ink sm:text-[2rem]">
               <span className="bg-gradient-to-r from-ink to-ink bg-[length:0%_1px] bg-left-bottom bg-no-repeat pb-0.5 transition-[background-size] duration-700 ease-soft group-hover:bg-[length:100%_1px]">
                 {project.title}
               </span>

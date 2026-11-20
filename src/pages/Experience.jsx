@@ -14,7 +14,7 @@ export default function Experience() {
     <>
       <PageHero
         eyebrow="Experience"
-        title={<>Talent Marketing <em className="text-iris">at Philips.</em></>}
+        title={<>Talent Marketing <em className="text-accent">at Philips.</em></>}
         intro="Six months helping a global health-technology company tell its story to prospective talent — across channels, markets and stakeholders."
       />
 
@@ -44,7 +44,7 @@ export default function Experience() {
         <div className="mt-16 grid gap-10 md:grid-cols-3">
           {philips.pillars.map((p, i) => (
             <Reveal key={p.no} delay={i * 120} className="group border-t border-ink pt-8">
-              <p className="font-serif text-6xl font-light text-lavender transition-colors duration-700 ease-soft group-hover:text-iris">{p.no}</p>
+              <p className="font-serif text-6xl font-light text-accent transition-colors duration-700 ease-soft group-hover:text-accent-deep">{p.no}</p>
               <h3 className="mt-6 text-2xl font-light">{p.title}</h3>
               <p className="mt-4 leading-relaxed text-slate">{p.body}</p>
             </Reveal>
@@ -56,14 +56,14 @@ export default function Experience() {
       <section aria-labelledby="process" className="bg-ink text-paper">
         <div className="container-x py-28 sm:py-36">
           <Reveal>
-            <p className="eyebrow text-paper/55"><span className="mr-3 font-serif text-base normal-case italic tracking-normal text-lavender">02</span>How the work flowed</p>
+            <p className="eyebrow text-paper/55"><span className="mr-3 font-serif text-base normal-case italic tracking-normal text-accent">02</span>How the work flowed</p>
             <h2 id="process" className="mt-6 max-w-3xl text-3xl leading-[1.1] font-light sm:text-5xl">From hiring priorities to published stories — and back.</h2>
           </Reveal>
           <ol className="mt-16 grid gap-px overflow-hidden rounded-sm bg-paper/10 sm:grid-cols-2 lg:grid-cols-4">
             {philips.process.map((s, i) => (
               <Reveal as="li" key={s.step} delay={i * 120} className="relative bg-ink p-8">
                 <span className="text-xs tracking-[0.2em] text-paper/45">STEP {i + 1}</span>
-                <h3 className="mt-4 font-serif text-3xl font-light italic text-lavender">{s.step}</h3>
+                <h3 className="mt-4 font-serif text-3xl font-light italic text-accent">{s.step}</h3>
                 <p className="mt-4 text-sm leading-relaxed text-paper/70">{s.body}</p>
               </Reveal>
             ))}
@@ -97,11 +97,11 @@ export default function Experience() {
               <Reveal as="article" key={e.role} delay={i * 120}>
                 <p className="text-sm text-slate">{e.period}</p>
                 <h3 className="mt-3 text-2xl font-light">{e.role}</h3>
-                <p className="mt-1 text-iris">{e.org}</p>
+                <p className="mt-1 text-accent-deep">{e.org}</p>
                 <ul className="mt-6 space-y-3">
                   {e.points.map((pt) => (
                     <li key={pt} className="flex gap-3 text-sm leading-relaxed text-slate">
-                      <span aria-hidden="true" className="mt-2 h-1 w-1 shrink-0 rounded-full bg-iris" />
+                      <span aria-hidden="true" className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-deep" />
                       {pt}
                     </li>
                   ))}

@@ -43,7 +43,7 @@ export default function Header() {
       <div className="container-x flex h-[72px] items-center justify-between">
         <Link to="/" className="group flex items-baseline gap-2" aria-label={`${profile.name} — home`}>
           <span className="font-serif text-xl tracking-tight">Van Anh Tran</span>
-          <span className="hidden h-1.5 w-1.5 rounded-full bg-iris transition-transform duration-500 ease-soft group-hover:scale-150 sm:block" />
+          <span className="hidden h-1.5 w-1.5 rounded-full bg-accent-deep transition-transform duration-500 ease-soft group-hover:scale-150 sm:block" />
         </Link>
 
         <nav aria-label="Main" className="hidden md:block">
@@ -101,7 +101,7 @@ export default function Header() {
                   end
                   className="flex items-baseline gap-4 border-b border-ink/10 py-4 font-serif text-4xl font-light aria-[current=page]:italic"
                 >
-                  <span className="font-sans text-xs text-iris">{String(i + 1).padStart(2, '0')}</span>
+                  <span className="font-sans text-xs text-accent-deep">{String(i + 1).padStart(2, '0')}</span>
                   {item.label}
                 </NavLink>
               </li>

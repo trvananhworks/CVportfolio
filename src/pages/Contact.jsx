@@ -17,7 +17,7 @@ export default function Contact() {
     <>
       <PageHero
         eyebrow="Contact"
-        title={<>Let’s <em className="text-iris">talk.</em></>}
+        title={<>Let’s <em className="text-accent">talk.</em></>}
         intro="I’m looking for marketing and communication internships and graduate opportunities — in branding, employer branding, digital marketing or strategic communications. I’d love to hear from you."
       />
       <section aria-label="Contact details" className="container-x pb-32">
@@ -28,7 +28,7 @@ export default function Contact() {
                 href={r.href}
                 download={r.download || undefined}
                 {...(r.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                className="group grid grid-cols-[5rem_1fr_auto] items-center gap-4 border-t border-ink/12 py-8 transition-colors duration-500 ease-soft hover:bg-lavender-soft/50 sm:grid-cols-[10rem_1fr_auto] sm:px-4 sm:py-10"
+                className="group grid grid-cols-[5rem_1fr_auto] items-center gap-4 border-t border-ink/12 py-8 transition-colors duration-500 ease-soft hover:bg-accent-soft/50 sm:grid-cols-[10rem_1fr_auto] sm:px-4 sm:py-10"
               >
                 <span className="eyebrow">{r.label}</span>
                 <span className="font-serif text-xl font-light break-all transition-transform duration-700 ease-soft group-hover:translate-x-2 sm:text-4xl sm:break-normal lg:text-5xl">

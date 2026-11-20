@@ -18,11 +18,11 @@ export default function Home() {
           <div className="lg:col-span-7">
             <Reveal>
               <p className="eyebrow flex items-center gap-3">
-                <span className="h-px w-8 bg-iris" />
+                <span className="h-px w-8 bg-accent-deep" />
                 Marketing · Brand · Strategic Communications
               </p>
-              <h1 id="hero-title" className="mt-8 text-[2.9rem] leading-[0.98] font-light sm:text-7xl lg:text-[6.2rem]">
-                Stories that make brands <em className="font-normal text-iris">worth</em> choosing.
+              <h1 id="hero-title" className="mt-8 text-[2.9rem] leading-[0.98] font-light sm:text-[5rem] lg:text-[7rem]">
+                Stories that make brands <em className="font-normal text-accent">worth</em> choosing.
               </h1>
             </Reveal>
             <Reveal delay={150} className="mt-10 max-w-xl">
@@ -62,7 +62,7 @@ export default function Home() {
           {profile.focus.map((f, i) => (
             <li key={f} className="flex items-center gap-8">
               {f}
-              {i < profile.focus.length - 1 && <span aria-hidden="true" className="hidden h-1.5 w-1.5 rounded-full bg-lavender lg:block" />}
+              {i < profile.focus.length - 1 && <span aria-hidden="true" className="hidden h-1.5 w-1.5 rounded-full bg-accent lg:block" />}
             </li>
           ))}
         </ul>
@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* ── Philips spotlight ──────────────────────── */}
-      <section aria-labelledby="spotlight" className="bg-lavender-soft/60 py-28 sm:py-36">
+      <section aria-labelledby="spotlight" className="bg-accent-soft/60 py-28 sm:py-36">
         <div className="container-x">
           <SectionHeading
             id="spotlight"
@@ -106,7 +106,7 @@ export default function Home() {
               <ol className="divide-y divide-ink/12 border-y border-ink/12">
                 {philips.pillars.map((p, i) => (
                   <Reveal as="li" key={p.no} delay={i * 100} className="grid grid-cols-[3rem_1fr] gap-4 py-7">
-                    <span className="font-serif text-lg italic text-iris">{p.no}</span>
+                    <span className="font-serif text-lg italic text-accent-deep">{p.no}</span>
                     <div>
                       <h3 className="text-xl font-normal">{p.title}</h3>
                       <p className="mt-2 text-sm leading-relaxed text-slate">{p.body}</p>
@@ -130,7 +130,7 @@ export default function Home() {
             {achievements.map((a, i) => (
               <Reveal key={a.label} delay={i * 120} className="bg-paper p-8 sm:p-10">
                 <p className="font-serif text-6xl font-light text-ink sm:text-7xl">{a.figure}</p>
-                <p className="eyebrow mt-4 text-iris">{a.label}</p>
+                <p className="eyebrow mt-4 text-accent-deep">{a.label}</p>
                 <p className="mt-4 text-sm leading-relaxed text-slate">{a.body}</p>
               </Reveal>
             ))}
