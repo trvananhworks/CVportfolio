@@ -187,7 +187,7 @@ export const achievements = [
   {
     figure: '1,200+',
     label: 'Protective masks distributed',
-    body: 'Co-founded and led the charity project “1 Student 1 N95”, partnering with influencers for outreach.',
+    body: 'Co-founded the charity project “1 Student 1 N95” and, as Communication Lead, worked with influencers and KOLs to spread its impact.',
   },
 ]
 
@@ -250,19 +250,35 @@ export const projects = [
     category: 'Campaign & Social Impact',
     title: '“1 Student 1 N95” — a student-led charity campaign',
     summary:
-      'Co-founded and led a charity project that distributed 1,200+ protective masks, partnering with influencers for outreach.',
+      'Co-founder and Communication Lead of a student charity project that distributed 1,200+ protective masks. I worked with influencers and KOLs to spread the project’s impact.',
     year: null,
-    role: 'Co-founder & Lead',
-    tags: ['Campaign', 'Influencer outreach', 'Community'],
+    role: 'Co-founder & Communication Lead',
+    tags: ['Communication', 'Influencer & KOL outreach', 'Social impact'],
     cover: 'mist',
     sections: [
       {
         heading: 'Overview',
-        body: 'I co-founded and led “1 Student 1 N95”, a charity project that distributed more than 1,200 protective masks and partnered with influencers to reach a wider audience.',
+        body: '“1 Student 1 N95” was a student-led charity project that distributed more than 1,200 protective masks. I was one of its co-founders and served as the project’s Communication Lead.',
       },
-      { heading: 'The idea', placeholder: 'Why did you start the project, and who was it for?' },
-      { heading: 'Outreach strategy', placeholder: 'How did you choose and work with influencer partners?' },
-      { heading: 'Key learnings', placeholder: 'What did leading this campaign teach you?' },
+      {
+        heading: 'My role',
+        list: [
+          'Reached out to influencers and KOLs and acted as the project’s main point of contact with them.',
+          'Worked with these partners to share the project with their audiences and spread its impact beyond our own network.',
+          'Kept communication between the project team and our partners clear and consistent.',
+        ],
+      },
+      {
+        heading: 'Impact',
+        list: [
+          'More than 1,200 protective masks distributed.',
+          'Influencer and KOL partnerships that carried the project’s message to a much wider audience.',
+        ],
+      },
+      {
+        heading: 'What I learned',
+        body: 'Trusted voices can take a message much further than any single account — and good partnerships start with clear, respectful communication that makes it easy for others to help.',
+      },
     ],
   },
   {
