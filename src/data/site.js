@@ -21,8 +21,8 @@ export const profile = {
 // ── The 3–4 photo slots. Drop files in /public/images and set `src`.
 export const images = {
   portrait: {
-    src: null, // e.g. '/images/portrait.jpg'
-    alt: 'Portrait of Van Anh Tran',
+    src: '/images/portrait.jpg',
+    alt: 'Portrait of Van Anh Tran in a brown knit cardigan, seated in warm window light',
     label: 'Image 1 · Portrait',
     hint: 'Vertical portrait, approx. 4:5',
   },

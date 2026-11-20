@@ -13,12 +13,15 @@ export default function Home() {
   return (
     <>
       {/* ── Hero ───────────────────────────────────── */}
-      <section aria-labelledby="hero-title" className="container-x pt-32 pb-20 sm:pt-40 lg:pt-44 lg:pb-28">
+      <section aria-labelledby="hero-title" className="relative overflow-hidden bg-gradient-to-b from-cream via-cream/70 to-paper">
+        {/* Warm sand panel behind the portrait (desktop) */}
+        <div aria-hidden="true" className="absolute inset-y-0 right-0 hidden w-[34%] bg-sand/70 lg:block" />
+        <div className="relative container-x pt-32 pb-20 sm:pt-40 lg:pt-44 lg:pb-28">
         <div className="grid items-end gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-7">
             <Reveal>
               <p className="eyebrow flex items-center gap-3">
-                <span className="h-px w-8 bg-accent-deep" />
+                <span className="h-px w-8 bg-mocha" />
                 Marketing · Brand · Strategic Communications
               </p>
               <h1 id="hero-title" className="mt-8 text-[2.9rem] leading-[0.98] font-light sm:text-[5rem] lg:text-[7rem]">
@@ -38,22 +41,33 @@ export default function Home() {
             </Reveal>
           </div>
           <Reveal delay={250} className="lg:col-span-5">
-            <ImageSlot image={images.portrait} priority className="rounded-sm" />
+            <figure>
+              <div className="relative">
+                {/* Offset cocoa frame */}
+                <div aria-hidden="true" className="absolute inset-0 translate-x-3 translate-y-3 rounded-sm border border-cocoa/35 sm:translate-x-5 sm:translate-y-5" />
+                <ImageSlot image={images.portrait} priority className="relative rounded-sm shadow-[0_30px_60px_-30px_rgba(79,56,36,0.45)]" />
+              </div>
+              <figcaption className="mt-8 flex items-center justify-between text-xs tracking-[0.18em] text-mocha uppercase sm:mt-10">
+                <span>Van Anh Tran</span>
+                <span className="font-serif text-sm normal-case italic tracking-normal">Rotterdam, 2026</span>
+              </figcaption>
+            </figure>
           </Reveal>
         </div>
 
-        <Reveal delay={300} as="dl" className="mt-20 grid gap-8 border-t border-ink/12 pt-8 sm:grid-cols-3">
+        <Reveal delay={300} as="dl" className="mt-20 grid gap-8 border-t border-cocoa/15 pt-8 sm:grid-cols-3">
           {[
             ['Studying', 'BSc International Communication & Media, Erasmus University Rotterdam — exp. 2027'],
             ['Recently', 'Talent Marketing Intern, Philips — Mar to Aug 2026'],
             ['Based in', profile.location],
           ].map(([k, v]) => (
             <div key={k}>
-              <dt className="eyebrow">{k}</dt>
+              <dt className="eyebrow text-mocha">{k}</dt>
               <dd className="mt-3 text-sm leading-relaxed text-ink">{v}</dd>
             </div>
           ))}
         </Reveal>
+        </div>
       </section>
 
       {/* ── Focus band ─────────────────────────────── */}

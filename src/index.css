@@ -17,6 +17,12 @@
   --color-accent-soft: #f4e8eb;
   --color-accent-light: #e3b1be;
 
+  /* Warm browns sampled from the portrait — used around the hero photo */
+  --color-cocoa: #4f3824;
+  --color-mocha: #8a6a52;
+  --color-sand: #ece2d7;
+  --color-cream: #f6efe8;
+
   --font-serif: "Playfair Display", "Georgia", serif;
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
 
