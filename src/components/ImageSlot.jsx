@@ -1,3 +1,5 @@
+import { asset } from '../data/site'
+
 /**
  * One of the 3–4 photo slots. Shows the real image when `image.src` is set,
  * otherwise a clearly labelled, on-brand placeholder.
@@ -7,7 +9,7 @@ export default function ImageSlot({ image, className = '', aspect = 'aspect-[4/5
     return (
       <figure className={`overflow-hidden bg-mist ${aspect} ${className}`}>
         <img
-          src={image.src}
+          src={asset(image.src)}
           alt={image.alt}
           loading={priority ? 'eager' : 'lazy'}
           className="h-full w-full object-cover transition-transform duration-[1200ms] ease-soft hover:scale-[1.02]"

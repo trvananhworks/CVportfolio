@@ -29,5 +29,8 @@ and shows as a dashed lavender "Placeholder" box on the site.
 - `src/pages/` — Home, About, Experience, Projects, ProjectDetail, Contact, NotFound
 
 ## Deploying
-Any static host works (Netlify, Vercel, GitHub Pages). It's a single-page app,
-so configure the host to rewrite unknown routes to `index.html`.
+Pushing to `main` deploys to GitHub Pages via `.github/workflows/deploy.yml`
+(Settings → Pages → Source: **GitHub Actions**). The workflow sets the base path
+from the repo name and copies `index.html` to `404.html` so deep links work.
+
+Hướng dẫn chỉnh sửa bằng tiếng Việt: [HUONG-DAN-CHINH-SUA.md](HUONG-DAN-CHINH-SUA.md)

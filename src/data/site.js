@@ -4,6 +4,9 @@
 // marked with `placeholder: true` or wrapped in a <Placeholder>.
 // ─────────────────────────────────────────────────────────────
 
+// Prefixes files in /public with the site's base path (needed on GitHub Pages).
+export const asset = (path) => (path?.startsWith('/') ? import.meta.env.BASE_URL + path.slice(1) : path)
+
 export const profile = {
   fullName: 'Nguyen Van Anh Tran',
   name: 'Van Anh Tran',
@@ -11,7 +14,7 @@ export const profile = {
   email: 'annietr.works@gmail.com',
   linkedin: 'https://www.linkedin.com/in/vananhtrng',
   linkedinLabel: 'linkedin.com/in/vananhtrng',
-  cv: '/VanAnhTran_CV_2026.pdf',
+  cv: asset('/VanAnhTran_CV_2026.pdf'),
   focus: ['Branding', 'Consumer behaviour', 'Digital marketing', 'Strategic communications'],
 }
 
