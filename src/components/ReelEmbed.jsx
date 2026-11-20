@@ -66,7 +66,8 @@ export default function ReelEmbed({ reel, className = '' }) {
         </div>
       )}
       <figcaption className="mt-4 flex flex-wrap items-baseline justify-between gap-3 text-sm text-slate">
-        <span className="font-serif italic">{reel.caption}</span>
+        {/* Caption kept for screen readers only */}
+        <span className="sr-only">{reel.caption}</span>
         {code && <TextLink href={reel.url} className="text-xs">Watch on Instagram</TextLink>}
       </figcaption>
     </figure>
