@@ -1,7 +1,6 @@
 import { TextLink } from '../components/Button'
 import ImageSlot from '../components/ImageSlot'
 import PageHero from '../components/PageHero'
-import Placeholder from '../components/Placeholder'
 import ReelEmbed from '../components/ReelEmbed'
 import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
@@ -90,7 +89,7 @@ export default function Experience() {
         <SectionHeading id="learnings" index="03" eyebrow="Highlights & learnings" title="What I’m taking with me." />
         <div className="mt-16 grid gap-14 lg:grid-cols-12 lg:gap-16">
           {/* Reels */}
-          <div className="space-y-12 lg:col-span-5">
+          <div className="space-y-12 lg:sticky lg:top-28 lg:col-span-5 lg:self-start">
             {philips.reels.map((r, i) => (
               <Reveal key={r.url ?? i} delay={i * 100}>
                 <ReelEmbed reel={r} />
@@ -116,11 +115,19 @@ export default function Experience() {
             <Reveal className="mt-14">
               <h3 className="eyebrow text-accent-deep">Key learnings</h3>
             </Reveal>
-            <div className="mt-6 grid gap-4">
-              <Reveal><Placeholder>Key learning #1 — e.g. about adapting employer brand messages to different markets.</Placeholder></Reveal>
-              <Reveal delay={80}><Placeholder>Key learning #2 — e.g. about editing short-form video for a global employer brand.</Placeholder></Reveal>
-              <Reveal delay={160}><Placeholder>Key learning #3 — e.g. about working with HR, marketing and recruitment stakeholders.</Placeholder></Reveal>
-            </div>
+            <ol className="mt-6 border-b border-ink/12">
+              {philips.learnings.map((l, i) => (
+                <Reveal as="li" key={l.title} delay={i * 80} className="group grid gap-3 border-t border-ink/12 py-7 sm:grid-cols-[3.5rem_1fr]">
+                  <span className="font-serif text-lg italic text-accent transition-colors duration-500 ease-soft group-hover:text-accent-deep">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <div>
+                    <h4 className="font-serif text-xl leading-snug sm:text-2xl">{l.title}</h4>
+                    <p className="mt-3 leading-relaxed text-slate">{l.body}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </ol>
             <Reveal className="mt-12">
               <TextLink to="/projects/employer-branding-philips">View the employer branding project</TextLink>
             </Reveal>
