@@ -88,7 +88,7 @@ export default function Home() {
           id="featured"
           index="01"
           eyebrow="Selected work"
-          title="Content and campaigns."
+          title="Coursework and creative work."
           intro="A few projects that show how I think about audiences, channels and the stories in between."
         />
         <div className="mt-20 grid gap-x-10 gap-y-20 md:grid-cols-2">

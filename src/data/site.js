@@ -203,7 +203,6 @@ export const projects = [
     role: 'Creator · PR & Communication Manager · Social Media Ambassador',
     tags: ['TikTok', 'Content planning', 'CapCut', 'Community'],
     cover: 'accent',
-    featured: true,
     sections: [
       {
         heading: 'Overview',
@@ -231,7 +230,6 @@ export const projects = [
     role: 'Co-founder & Lead',
     tags: ['Campaign', 'Influencer outreach', 'Community'],
     cover: 'mist',
-    featured: true,
     sections: [
       {
         heading: 'Overview',
@@ -268,6 +266,7 @@ export const projects = [
     role: null,
     tags: ['Strategy', 'Coursework'],
     cover: 'accent-outline',
+    featured: true,
     placeholder: true,
     sections: [
       { heading: 'Brief', placeholder: 'Course name and the brief you were given.' },
@@ -285,6 +284,7 @@ export const projects = [
     role: 'Creator',
     tags: ['Video', 'Design', 'Canva'],
     cover: 'ink-outline',
+    featured: true,
     placeholder: true,
     sections: [
       { heading: 'About the work', placeholder: 'What is it and what inspired it?' },
