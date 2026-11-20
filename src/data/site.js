@@ -274,19 +274,38 @@ export const projects = [
   {
     slug: 'university-marketing-projects',
     category: 'University Marketing Projects',
-    title: 'Coursework at Erasmus University Rotterdam',
-    summary: 'Placeholder — a selected marketing or communication project from the International Communication and Media programme.',
+    title: 'Hello 24/7: pitching a new direction for an app',
+    summary:
+      'Digital Content course, Erasmus University Rotterdam — our team of three used company data to propose a development direction for the Hello 24/7 app. Our pitch was one of the top two the company selected for reference.',
     year: null,
-    role: null,
-    tags: ['Strategy', 'Coursework'],
-    cover: 'accent-outline',
+    role: 'Team member & presenter (team of 3)',
+    tags: ['Digital content', 'App strategy', 'Storyboarding', 'Pitching'],
+    cover: 'lavender-outline',
+    image: '/images/coursework-hello247.jpg',
+    imageAlt: 'Van Anh presenting the Hello 24/7 final pitch, next to two pages of the video storyboard',
     featured: true,
-    placeholder: true,
     sections: [
-      { heading: 'Brief', placeholder: 'Course name and the brief you were given.' },
-      { heading: 'Approach', placeholder: 'How your team tackled it and your specific contribution.' },
-      { heading: 'Deliverables', placeholder: 'Campaign plan, presentation, report — add visuals if possible.' },
-      { heading: 'Feedback & learnings', placeholder: 'Grade or lecturer feedback (if you want to share), and what you learned.' },
+      {
+        heading: 'Brief',
+        body: 'In the Digital Content course at Erasmus University Rotterdam, our team of three was asked to propose a direction for developing the Hello 24/7 app, based on data provided by the company.',
+      },
+      {
+        heading: 'What we did',
+        list: [
+          'Worked from the company’s own data to shape a development direction for the app.',
+          'Built a creative concept, “One Shared Peace of Mind”, with the line “One App, One Shared Peace of Mind.”',
+          'Storyboarded a 40-second, 12-cut video to bring the concept to life.',
+          'Presented our final pitch — I opened the presentation and guided the first part.',
+        ],
+      },
+      {
+        heading: 'The concept',
+        body: 'The storyboard follows someone rushing out of work with the nagging feeling they have forgotten something — a child, a parent’s medication. Then a message from family arrives in Hello 24/7: don’t worry, it’s already taken care of. Shared tasks tick off one by one, and the worry turns into relief.',
+      },
+      {
+        heading: 'Outcome',
+        body: 'We competed against other teams in the course. The company selected our proposal as one of its top two for reference.',
+      },
     ],
   },
   {

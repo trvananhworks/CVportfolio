@@ -31,10 +31,12 @@ export default function ProjectDetail() {
           <h1 className="mt-6 max-w-5xl text-4xl leading-[1.04] font-light sm:text-6xl lg:text-7xl">{project.title}</h1>
         </Reveal>
         <Reveal delay={120} as="dl" className="mt-14 grid gap-8 border-t border-ink/12 pt-8 sm:grid-cols-3">
-          <div>
-            <dt className="eyebrow">Year</dt>
-            <dd className="mt-3">{project.year ?? <span className="text-accent-deep">To add</span>}</dd>
-          </div>
+          {(project.year || project.placeholder) && (
+            <div>
+              <dt className="eyebrow">Year</dt>
+              <dd className="mt-3">{project.year ?? <span className="text-accent-deep">To add</span>}</dd>
+            </div>
+          )}
           <div>
             <dt className="eyebrow">Role</dt>
             <dd className="mt-3">{project.role ?? <span className="text-accent-deep">To add</span>}</dd>

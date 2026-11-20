@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Arrow } from './Button'
+import { asset } from '../data/site'
 
 const covers = {
   navy: 'bg-ink text-accent-light',
@@ -12,6 +13,19 @@ const covers = {
 
 /** Typographic cover used until project imagery is supplied. */
 export function ProjectCover({ project, index, large = false, wide = false }) {
+  const ratio = large ? 'aspect-[16/9]' : wide ? 'aspect-[4/3] md:aspect-[21/9]' : 'aspect-[4/3]'
+  if (project.image) {
+    return (
+      <div className={`overflow-hidden bg-navy ${ratio}`}>
+        <img
+          src={asset(project.image)}
+          alt={project.imageAlt ?? ''}
+          loading="lazy"
+          className="h-full w-full object-cover transition-transform duration-[900ms] ease-soft group-hover:scale-[1.015]"
+        />
+      </div>
+    )
+  }
   return (
     <div
       className={`relative flex overflow-hidden ${large ? 'aspect-[16/9]' : wide ? 'aspect-[4/3] md:aspect-[21/9]' : 'aspect-[4/3]'} ${covers[project.cover]} transition-transform duration-[900ms] ease-soft group-hover:scale-[1.015]`}
