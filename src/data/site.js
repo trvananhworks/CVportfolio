@@ -100,9 +100,9 @@ export const philips = {
   reels: [
     {
       url: 'https://www.instagram.com/reel/DX_7rksyP4z/',
-      caption: 'Instagram Reel for Philips — edited by Van Anh',
-      cover: null, // e.g. '/images/reel-philips.jpg'
-      views: null, // e.g. '12.3K'
+      caption: 'Innovation Impact Week at Philips, HTC Eindhoven — Instagram Reel edited by Van Anh',
+      cover: '/images/reel-philips.jpg',
+      views: '10.2K', // update from Instagram now and then
     },
   ],
   process: [

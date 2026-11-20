@@ -22,7 +22,7 @@ export default function ReelEmbed({ reel, className = '' }) {
           href={reel.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative block aspect-[9/16] overflow-hidden rounded-sm bg-ink shadow-[0_30px_60px_-35px_rgba(20,27,52,0.45)]"
+          className="group relative block aspect-[3/5] overflow-hidden rounded-sm bg-ink shadow-[0_30px_60px_-35px_rgba(20,27,52,0.45)]"
         >
           <img
             src={asset(reel.cover)}
