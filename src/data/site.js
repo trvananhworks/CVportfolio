@@ -84,12 +84,14 @@ export const philips = {
   ],
   channels: ['LinkedIn', 'Career portals', 'Internal newsletters'],
   stakeholders: ['HR', 'Marketing', 'Recruitment'],
-  // Tools used during the internship. `kind` describes the tool itself.
+  // Tools used during the internship. `kind` = what I used it for.
   tools: [
-    { name: 'Adobe Express', kind: 'Design & short-form video' },
+    { name: 'Phenom People', kind: 'Designing the Philips career page and Philips newsletter' },
+    { name: 'Sprout Social', kind: 'Publishing LinkedIn posts and tracking performance with UTM links' },
+    { name: 'Adobe Express', kind: 'Editing LinkedIn images' },
+    { name: 'CapCut', kind: 'Editing short-form video' },
     { name: 'Viva Engage', kind: 'Internal communication' },
     { name: 'Advocacy', kind: 'Employee advocacy' },
-    { name: 'Phenom People', kind: 'Talent experience platform' },
   ],
   // Instagram Reels edited for Philips. Paste the public link into `url`,
   // e.g. 'https://www.instagram.com/reel/ABC123xyz/'. Add more objects for more reels.
@@ -194,7 +196,16 @@ export const projects = [
           'Partnered with HR, marketing and recruitment stakeholders to align messaging with workforce planning objectives and regional hiring targets.',
         ],
       },
-      { heading: 'Tools', body: 'Adobe Express, Viva Engage, Advocacy and Phenom People.' },
+      {
+        heading: 'Tools',
+        list: [
+          'Phenom People — designing the Philips career page and Philips newsletter.',
+          'Sprout Social — publishing LinkedIn posts and tracking performance with UTM links.',
+          'Adobe Express — editing LinkedIn images.',
+          'CapCut — editing short-form video.',
+          'Viva Engage and Advocacy — internal communication and employee advocacy.',
+        ],
+      },
       { heading: 'A closer look', placeholder: 'Add one or two specific campaigns or stories you worked on (only what you’re allowed to share publicly).' },
       { heading: 'Outcomes', placeholder: 'Add any results you can share — e.g. qualitative feedback or approved metrics. Leave out if confidential.' },
       { heading: 'Key learnings', placeholder: 'What did this internship teach you about employer branding and stakeholder communication?' },
