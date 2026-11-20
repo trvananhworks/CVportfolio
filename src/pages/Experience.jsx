@@ -13,7 +13,7 @@ export default function Experience() {
     <>
       <PageHero
         eyebrow="Experience"
-        title={<>Talent Marketing <em className="font-medium text-philips">at Philips.</em></>}
+        title={<>Talent Marketing <em className="text-accent">at Philips.</em></>}
         intro="Six months helping a global health-technology company tell its story to prospective talent — across channels, markets and stakeholders."
       />
 
@@ -36,7 +36,7 @@ export default function Experience() {
 
       {/* Pillars */}
       <section aria-labelledby="contributions" className="container-x py-28 sm:py-36">
-        <SectionHeading tone="philips" id="contributions" index="01" eyebrow="Contributions" title="Three threads that ran through the work." />
+        <SectionHeading id="contributions" index="01" eyebrow="Contributions" title="Three threads that ran through the work." />
         <div className="mt-16 grid gap-12 lg:grid-cols-12 lg:gap-16">
           <Reveal className="lg:col-span-5">
             <figure className="lg:sticky lg:top-28">
@@ -50,7 +50,7 @@ export default function Experience() {
           <div className="space-y-14 lg:col-span-7">
             {philips.pillars.map((p, i) => (
               <Reveal key={p.no} delay={i * 120} className="group grid gap-4 border-t border-ink pt-8 sm:grid-cols-[6rem_1fr]">
-                <p className="font-serif text-5xl font-light text-philips transition-colors duration-700 ease-soft group-hover:text-philips-deep sm:text-6xl">{p.no}</p>
+                <p className="font-serif text-5xl font-light text-accent transition-colors duration-700 ease-soft group-hover:text-accent-deep sm:text-6xl">{p.no}</p>
                 <div>
                   <h3 className="text-2xl font-light sm:text-3xl">{p.title}</h3>
                   <p className="mt-4 text-lg leading-relaxed text-slate">{p.body}</p>
@@ -65,14 +65,14 @@ export default function Experience() {
       <section aria-labelledby="process" className="bg-ink text-paper">
         <div className="container-x py-28 sm:py-36">
           <Reveal>
-            <p className="eyebrow text-paper/55"><span className="mr-3 font-serif text-base normal-case italic tracking-normal text-philips-light">02</span>How the work flowed</p>
+            <p className="eyebrow text-paper/55"><span className="mr-3 font-serif text-base normal-case italic tracking-normal text-accent-light">02</span>How the work flowed</p>
             <h2 id="process" className="mt-6 max-w-3xl text-3xl leading-[1.1] font-light sm:text-5xl">From hiring priorities to published stories — and back.</h2>
           </Reveal>
           <ol className="mt-16 grid gap-px overflow-hidden rounded-sm bg-paper/10 sm:grid-cols-2 lg:grid-cols-4">
             {philips.process.map((s, i) => (
               <Reveal as="li" key={s.step} delay={i * 120} className="relative bg-ink p-8">
                 <span className="text-xs tracking-[0.2em] text-paper/45">STEP {i + 1}</span>
-                <h3 className="mt-4 font-serif text-3xl font-light italic text-philips-light">{s.step}</h3>
+                <h3 className="mt-4 font-serif text-3xl font-light italic text-accent-bright">{s.step}</h3>
                 <p className="mt-4 text-sm leading-relaxed text-paper/70">{s.body}</p>
               </Reveal>
             ))}
@@ -85,13 +85,13 @@ export default function Experience() {
 
       {/* Highlights & learnings */}
       <section aria-labelledby="learnings" className="container-x py-28 sm:py-36">
-        <SectionHeading tone="philips" id="learnings" index="03" eyebrow="Highlights & learnings" title="What I’m taking with me." />
+        <SectionHeading id="learnings" index="03" eyebrow="Highlights & learnings" title="What I’m taking with me." />
         <div className="mt-16 grid gap-14 lg:grid-cols-12 lg:gap-16">
           {/* Reels */}
           <div className="space-y-12 lg:sticky lg:top-28 lg:col-span-5 lg:self-start">
             {philips.reels.map((r, i) => (
               <Reveal key={r.url ?? i} delay={i * 100}>
-                <ReelEmbed reel={r} tone="philips" />
+                <ReelEmbed reel={r} />
               </Reveal>
             ))}
           </div>
@@ -99,10 +99,10 @@ export default function Experience() {
           <div className="lg:col-span-7">
             {/* Toolkit */}
             <Reveal>
-              <h3 className="eyebrow text-philips">Tools I worked with</h3>
+              <h3 className="eyebrow text-accent-deep">Tools I worked with</h3>
               <ul className="mt-6 grid gap-px overflow-hidden rounded-sm bg-ink/10 sm:grid-cols-2">
                 {philips.tools.map((t) => (
-                  <li key={t.name} className="group bg-paper p-6 transition-colors duration-500 ease-soft hover:bg-philips-soft">
+                  <li key={t.name} className="group bg-paper p-6 transition-colors duration-500 ease-soft hover:bg-accent-soft/60">
                     <p className="font-serif text-2xl">{t.name}</p>
                     <p className="mt-2 text-sm text-slate">{t.kind}</p>
                   </li>
@@ -112,12 +112,12 @@ export default function Experience() {
 
             {/* Learnings */}
             <Reveal className="mt-14">
-              <h3 className="eyebrow text-philips">Key learnings</h3>
+              <h3 className="eyebrow text-accent-deep">Key learnings</h3>
             </Reveal>
             <ol className="mt-6 border-b border-ink/12">
               {philips.learnings.map((l, i) => (
                 <Reveal as="li" key={l.title} delay={i * 80} className="group grid gap-3 border-t border-ink/12 py-7 sm:grid-cols-[3.5rem_1fr]">
-                  <span className="font-serif text-lg italic text-philips transition-colors duration-500 ease-soft group-hover:text-philips-deep">
+                  <span className="font-serif text-lg italic text-accent transition-colors duration-500 ease-soft group-hover:text-accent-deep">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <div>
