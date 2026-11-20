@@ -1,5 +1,8 @@
 # Hướng dẫn chỉnh sửa website
 
+Website: **https://trvananhworks.github.io/CVportfolio/**
+Repository: **https://github.com/trvananhworks/CVportfolio**
+
 Bạn có thể sửa toàn bộ website ngay trên **github.com**, không cần cài đặt gì.
 Mỗi lần bạn lưu (commit), GitHub tự build lại và cập nhật website sau khoảng **1–2 phút**.
 Xem tiến trình ở tab **Actions** của repository (dấu ✓ xanh là đã xong).
@@ -96,18 +99,18 @@ Upload file PDF mới vào thư mục `public/` với **đúng tên** `VanAnhTra
 
 ### A. Đổi địa chỉ (link) website
 
-Hiện tại: `https://chatgptlamtran-ctrl.github.io/my-portfolio/`
+Hiện tại: `https://trvananhworks.github.io/CVportfolio/`
 
 **Cách 1 — Đổi phần cuối link (miễn phí)**
 1. Vào repository → **Settings** (bánh răng) → mục **General**
-2. Ô **Repository name**: đổi `my-portfolio` thành tên mới, vd. `vananhtran`
+2. Ô **Repository name**: đổi `CVportfolio` thành tên mới, vd. `vananhtran`
 3. Bấm **Rename**
 4. Vào tab **Actions** → **Deploy to GitHub Pages** → **Run workflow** để build lại
-5. Link mới: `https://chatgptlamtran-ctrl.github.io/vananhtran/`
+5. Link mới: `https://trvananhworks.github.io/vananhtran/`
 
 **Cách 2 — Link ngắn nhất (miễn phí)**
-Đổi tên repository thành đúng `chatgptlamtran-ctrl.github.io` (làm như Cách 1)
-→ link thành `https://chatgptlamtran-ctrl.github.io/`
+Đổi tên repository thành đúng `trvananhworks.github.io` (làm như Cách 1)
+→ link thành `https://trvananhworks.github.io/`
 
 **Cách 3 — Tên miền riêng, vd. `vananhtran.com` (khoảng 10–15 €/năm)**
 1. Mua tên miền ở Namecheap, Cloudflare, Porkbun…
@@ -117,7 +120,7 @@ Hiện tại: `https://chatgptlamtran-ctrl.github.io/my-portfolio/`
    https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
 5. Đợi vài phút đến vài giờ, rồi tích **Enforce HTTPS** trong Settings → Pages
 
-> Phần đầu link (`chatgptlamtran-ctrl`) là tên tài khoản GitHub. Muốn đổi phần này:
+> Phần đầu link (`trvananhworks`) là tên tài khoản GitHub. Muốn đổi phần này:
 > github.com → ảnh đại diện → **Settings** → **Account** → **Change username**.
 > Lưu ý: link cũ sẽ ngừng hoạt động.
 
