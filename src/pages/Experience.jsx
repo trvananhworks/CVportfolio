@@ -2,6 +2,7 @@ import { TextLink } from '../components/Button'
 import ImageSlot from '../components/ImageSlot'
 import PageHero from '../components/PageHero'
 import Placeholder from '../components/Placeholder'
+import ReelEmbed from '../components/ReelEmbed'
 import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
 import useSeo from '../components/useSeo'
@@ -87,15 +88,44 @@ export default function Experience() {
       {/* Highlights & learnings */}
       <section aria-labelledby="learnings" className="container-x py-28 sm:py-36">
         <SectionHeading id="learnings" index="03" eyebrow="Highlights & learnings" title="What I’m taking with me." />
-        <div className="mt-14 grid gap-6 md:ml-[25%] md:grid-cols-2">
-          <Reveal><Placeholder>Highlight project — a campaign or story you worked on that you can share publicly.</Placeholder></Reveal>
-          <Reveal delay={80}><Placeholder>Key learning #1 — e.g. about adapting employer brand messages to different markets.</Placeholder></Reveal>
-          <Reveal delay={160}><Placeholder>Key learning #2 — e.g. about using recruitment analytics to inform content decisions.</Placeholder></Reveal>
-          <Reveal delay={240}><Placeholder>Key learning #3 — e.g. about working with HR, marketing and recruitment stakeholders.</Placeholder></Reveal>
+        <div className="mt-16 grid gap-14 lg:grid-cols-12 lg:gap-16">
+          {/* Reels */}
+          <div className="space-y-12 lg:col-span-5">
+            {philips.reels.map((r, i) => (
+              <Reveal key={r.url ?? i} delay={i * 100}>
+                <ReelEmbed reel={r} />
+              </Reveal>
+            ))}
+          </div>
+
+          <div className="lg:col-span-7">
+            {/* Toolkit */}
+            <Reveal>
+              <h3 className="eyebrow text-accent-deep">Tools I worked with</h3>
+              <ul className="mt-6 grid gap-px overflow-hidden rounded-sm bg-ink/10 sm:grid-cols-2">
+                {philips.tools.map((t) => (
+                  <li key={t.name} className="group bg-paper p-6 transition-colors duration-500 ease-soft hover:bg-accent-soft/60">
+                    <p className="font-serif text-2xl">{t.name}</p>
+                    <p className="mt-2 text-sm text-slate">{t.kind}</p>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+
+            {/* Learnings */}
+            <Reveal className="mt-14">
+              <h3 className="eyebrow text-accent-deep">Key learnings</h3>
+            </Reveal>
+            <div className="mt-6 grid gap-4">
+              <Reveal><Placeholder>Key learning #1 — e.g. about adapting employer brand messages to different markets.</Placeholder></Reveal>
+              <Reveal delay={80}><Placeholder>Key learning #2 — e.g. about editing short-form video for a global employer brand.</Placeholder></Reveal>
+              <Reveal delay={160}><Placeholder>Key learning #3 — e.g. about working with HR, marketing and recruitment stakeholders.</Placeholder></Reveal>
+            </div>
+            <Reveal className="mt-12">
+              <TextLink to="/projects/employer-branding-philips">View the employer branding project</TextLink>
+            </Reveal>
+          </div>
         </div>
-        <Reveal className="mt-12 md:ml-[25%]">
-          <TextLink to="/projects/employer-branding-philips">View the employer branding project</TextLink>
-        </Reveal>
       </section>
 
       {/* Earlier */}

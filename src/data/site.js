@@ -84,6 +84,18 @@ export const philips = {
   ],
   channels: ['LinkedIn', 'Career portals', 'Internal newsletters'],
   stakeholders: ['HR', 'Marketing', 'Recruitment'],
+  // Tools used during the internship. `kind` describes the tool itself.
+  tools: [
+    { name: 'Adobe Express', kind: 'Design & short-form video' },
+    { name: 'Viva Engage', kind: 'Internal communication' },
+    { name: 'Advocacy', kind: 'Employee advocacy' },
+    { name: 'Phenom People', kind: 'Talent experience platform' },
+  ],
+  // Instagram Reels edited for Philips. Paste the public link into `url`,
+  // e.g. 'https://www.instagram.com/reel/ABC123xyz/'. Add more objects for more reels.
+  reels: [
+    { url: null, caption: 'Instagram Reel for Philips — edited by Van Anh' },
+  ],
   process: [
     { step: 'Listen', body: 'Understand workforce planning objectives and regional hiring targets with stakeholders.' },
     { step: 'Shape', body: 'Craft employer branding narratives for a global talent audience.' },
@@ -175,6 +187,7 @@ export const projects = [
           'Partnered with HR, marketing and recruitment stakeholders to align messaging with workforce planning objectives and regional hiring targets.',
         ],
       },
+      { heading: 'Tools', body: 'Adobe Express, Viva Engage, Advocacy and Phenom People.' },
       { heading: 'A closer look', placeholder: 'Add one or two specific campaigns or stories you worked on (only what you’re allowed to share publicly).' },
       { heading: 'Outcomes', placeholder: 'Add any results you can share — e.g. qualitative feedback or approved metrics. Leave out if confidential.' },
       { heading: 'Key learnings', placeholder: 'What did this internship teach you about employer branding and stakeholder communication?' },
