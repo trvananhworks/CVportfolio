@@ -1,4 +1,5 @@
 import { TextLink } from './Button'
+import { asset } from '../data/site'
 
 /** Extracts the shortcode from an Instagram reel/post URL. */
 function shortcode(url) {
@@ -15,7 +16,30 @@ export default function ReelEmbed({ reel, className = '' }) {
 
   return (
     <figure className={`mx-auto w-full max-w-[380px] ${className}`}>
-      {code ? (
+      {code && reel.cover && reel.views ? (
+        /* Custom card: cover + view count only, opens the reel on Instagram */
+        <a
+          href={reel.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group relative block aspect-[9/16] overflow-hidden rounded-sm bg-ink shadow-[0_30px_60px_-35px_rgba(20,27,52,0.45)]"
+        >
+          <img
+            src={asset(reel.cover)}
+            alt={`Cover frame of ${reel.caption}`}
+            loading="lazy"
+            className="h-full w-full object-cover transition-transform duration-[1200ms] ease-soft group-hover:scale-[1.03]"
+          />
+          <span aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
+          <span aria-hidden="true" className="absolute inset-0 m-auto grid h-16 w-16 place-items-center rounded-full border border-paper/50 bg-ink/20 text-paper backdrop-blur-sm transition-all duration-500 ease-soft group-hover:scale-105 group-hover:bg-accent group-hover:border-accent">
+            <svg width="18" height="18" viewBox="0 0 18 18"><path d="M5 3.5v11l9-5.5z" fill="currentColor" /></svg>
+          </span>
+          <span className="absolute bottom-4 left-4 flex items-center gap-2 text-lg font-semibold text-paper">
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 2.5v11L13 8z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /></svg>
+            {reel.views}<span className="sr-only"> views — watch on Instagram (opens in a new tab)</span>
+          </span>
+        </a>
+      ) : code ? (
         <div className="overflow-hidden rounded-sm border border-ink/10 bg-paper shadow-[0_30px_60px_-35px_rgba(20,27,52,0.45)]">
           <iframe
             src={`https://www.instagram.com/reel/${code}/embed/`}

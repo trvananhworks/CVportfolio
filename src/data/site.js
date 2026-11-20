@@ -39,10 +39,10 @@ export const images = {
     hint: 'Vertical, approx. 3:4',
   },
   creative: {
-    src: null,
-    alt: 'Behind-the-scenes of a creative or content project',
+    src: '/images/creative.jpg',
+    alt: 'Grid of nine videos from Van Anh’s TikTok channel — vlogs and scenes around Hanoi, with view counts',
     label: 'Image 4 · Creative work',
-    hint: 'Vertical or square',
+    hint: 'Vertical, 3:4',
   },
 }
 
@@ -93,8 +93,15 @@ export const philips = {
   ],
   // Instagram Reels edited for Philips. Paste the public link into `url`,
   // e.g. 'https://www.instagram.com/reel/ABC123xyz/'. Add more objects for more reels.
+  // Optional: add `cover` (image in /public/images) AND `views` (e.g. '12.3K') to show
+  // a custom card with view count only, instead of Instagram's embed (which shows likes).
   reels: [
-    { url: 'https://www.instagram.com/reel/DX_7rksyP4z/', caption: 'Instagram Reel for Philips — edited by Van Anh' },
+    {
+      url: 'https://www.instagram.com/reel/DX_7rksyP4z/',
+      caption: 'Instagram Reel for Philips — edited by Van Anh',
+      cover: null, // e.g. '/images/reel-philips.jpg'
+      views: null, // e.g. '12.3K'
+    },
   ],
   process: [
     { step: 'Listen', body: 'Understand workforce planning objectives and regional hiring targets with stakeholders.' },

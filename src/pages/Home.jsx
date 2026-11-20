@@ -150,7 +150,13 @@ export default function Home() {
             ))}
           </div>
           <Reveal delay={200} className="lg:col-span-4">
-            <ImageSlot image={images.creative} aspect="aspect-[4/5]" className="rounded-sm" />
+            <figure>
+              <ImageSlot image={images.creative} aspect="aspect-[3/4]" className="rounded-sm" />
+              <figcaption className="mt-4 flex justify-between text-xs tracking-[0.18em] text-slate uppercase">
+                <span>TikTok</span>
+                <span className="font-serif text-sm normal-case italic tracking-normal">Vlogs from Hanoi</span>
+              </figcaption>
+            </figure>
           </Reveal>
         </div>
       </section>
